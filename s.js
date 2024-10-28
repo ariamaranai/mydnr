@@ -1,0 +1,2 @@
+
+{let c=chrome,n=c.webNavigation,a=()=>(n.onBeforeNavigate.addListener(f,{url:[{hostEquals:"www.google.com",queryContains:"?q="}]}),n.onCommitted.removeListener(a)),f=v=>{n.onBeforeNavigate.removeListener(f),n.onCommitted.addListener(a),v=new URL(v.url);let i=3;while(v.searchParams.delete(["gs_lcrp","ie","sourceid"][--i]),i);c.tabs.update({url: v.href});};a()}

@@ -1,1 +1,144 @@
-[{"id":1,"action":{"type":"block"},"condition":{"requestDomains":["c.amazon-adsystem.com","delivery.adrecover.com","jnn-pa.googleapis.com","pagead2.googlesyndication.com","securepubads.g.doubleclick.net","servedbyadbutler.com","ssl.google-analytics.com","www.google-analytics.com","www.googletagmanager.com","www.googletagservices.com"]}},{"id":2,"action":{"type":"block"},"condition":{"resourceTypes":["ping","csp_report"]}},{"id":3,"action":{"type":"block"},"condition":{"urlFilter":".com/generate_204"}}]
+[
+  {
+    "id": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "c.amazon-adsystem.com",
+        "delivery.adrecover.com",
+        "jnn-pa.googleapis.com",
+        "pagead2.googlesyndication.com",
+        "securepubads.g.doubleclick.net",
+        "servedbyadbutler.com",
+        "ssl.google-analytics.com",
+        "www.google-analytics.com",
+        "www.googletagmanager.com",
+        "www.googletagservices.com"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "action": {
+      "type":"block"
+    },
+    "condition": {
+      "urlFilter": ".com/generate_204"
+    }
+  },
+  {
+    "id": 3,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": [
+        "ping",
+        "csp_report"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "www.youtube.com",
+          "queryTransform": {
+            "removeParams": [
+              "app",
+              "embeds_referring_euri",
+              "feature",
+              "si",
+              "start_radio"
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "requestDomains": [
+        "www.youtube.com",
+        "youtu.be"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "removeParams": [
+              "locale"
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "requestDomains": [
+        "facebook.com",
+        "instagram.com"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "removeParams": [
+              "_r",
+              "_t",
+              "is_from_webapp",
+              "sender_device"
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "requestDomains": [
+        "tiktok.com"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "query": ""
+        }
+      }
+    },
+    "condition": {
+      "requestDomains": [
+        "nogizaka46.com",
+        "sakurazaka46.com",
+        "hinatazaka46.com",
+        "keyakizaka46.com"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  }
+]
