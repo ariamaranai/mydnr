@@ -43,6 +43,38 @@
   {
     "id": 4,
     "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "accept",
+          "operation": "remove"
+        },
+        {
+          "header": "accept-language",
+          "operation": "remove"
+        },
+        {
+          "header": "alt-used",
+          "operation": "remove"
+        }
+      ],
+      "responseHeaders": [
+        {
+          "header": "content-security-policy",
+          "operation": "remove"
+        }
+      ]
+    },
+    "condition": {
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "action": {
       "type": "redirect",
       "redirect": {
         "transform": {
@@ -70,7 +102,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 6,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -94,7 +126,7 @@
     }
   },
   {
-    "id": 6,
+    "id": 7,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -120,7 +152,7 @@
     }
   },
   {
-    "id": 7,
+    "id": 8,
     "action": {
       "type": "redirect",
       "redirect": {
