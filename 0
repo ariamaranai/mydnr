@@ -31,12 +31,20 @@
   {
     "id": 3,
     "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": [
+        "ping",
+        "csp_report"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "action": {
       "type": "modifyHeaders",
       "requestHeaders": [
-        {
-          "header": "accept",
-          "operation": "remove"
-        },
         {
           "header": "accept-language",
           "operation": "remove"
@@ -61,7 +69,24 @@
     }
   },
   {
-    "id": 4,
+    "id": 5,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "accept",
+          "operation": "remove"
+        }
+      ]
+    },
+    "condition": {
+      "excludedRequestDomains": [
+        "www.facebook.com"
+      ]
+    }
+  },
+  {
+    "id": 6,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -90,7 +115,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 7,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -114,7 +139,7 @@
     }
   },
   {
-    "id": 6,
+    "id": 8,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -140,7 +165,26 @@
     }
   },
   {
-    "id": 7,
+    "id": 9,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "x.com"
+        }
+      }
+    },
+    "condition": {
+      "requestDomains": [
+        "twitter.com"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 10,
     "action": {
       "type": "redirect",
       "redirect": {
