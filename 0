@@ -31,18 +31,6 @@
   {
     "id": 3,
     "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": [
-        "ping",
-        "csp_report"
-      ]
-    }
-  },
-  {
-    "id": 4,
-    "action": {
       "type": "modifyHeaders",
       "requestHeaders": [
         {
@@ -73,7 +61,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 4,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -102,7 +90,7 @@
     }
   },
   {
-    "id": 6,
+    "id": 5,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -126,7 +114,7 @@
     }
   },
   {
-    "id": 7,
+    "id": 6,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -152,7 +140,7 @@
     }
   },
   {
-    "id": 8,
+    "id": 7,
     "action": {
       "type": "redirect",
       "redirect": {
