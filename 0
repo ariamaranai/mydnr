@@ -81,7 +81,8 @@
     },
     "condition": {
       "excludedRequestDomains": [
-        "www.facebook.com"
+        "www.facebook.com",
+        "tumblr.com"
       ]
     }
   },
@@ -105,12 +106,14 @@
       }
     },
     "condition": {
-      "requestDomains": [
+      "requestDomains": [    
+        "m.youtube.com",    
         "www.youtube.com",
         "youtu.be"
       ],
       "resourceTypes": [
-        "main_frame"
+        "main_frame",
+        "sub_frame"
       ]
     }
   },
@@ -148,7 +151,12 @@
             "removeParams": [
               "_r",
               "_t",
+              "embed_card_play",
+              "embed_source",
               "is_from_webapp",
+              "refer",
+              "referer_url",
+              "referer_video_id",
               "sender_device"
             ]
           }
@@ -160,7 +168,8 @@
         "tiktok.com"
       ],
       "resourceTypes": [
-        "main_frame"
+        "main_frame",
+        "sub_frame"
       ]
     }
   },
