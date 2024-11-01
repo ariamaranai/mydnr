@@ -6,10 +6,13 @@
     },
     "condition": {
       "requestDomains": [
+        "analytics.tver.jp",
         "c.amazon-adsystem.com",
         "delivery.adrecover.com",
         "jnn-pa.googleapis.com",
+        "logcollector.note.com",
         "pagead2.googlesyndication.com",
+        "qoe.lemino.docomo.ne.jp",
         "securepubads.g.doubleclick.net",
         "servedbyadbutler.com",
         "ssl.google-analytics.com",
@@ -25,11 +28,50 @@
       "type":"block"
     },
     "condition": {
-      "urlFilter": ".com/generate_204"
+      "urlFilter": ".com/gen_204"
     }
   },
   {
     "id": 3,
+    "action": {
+      "type":"block"
+    },
+    "condition": {
+      "urlFilter": ".com/generate_204"
+    }
+  },
+  {
+    "id": 4,
+    "action": {
+      "type":"block"
+    },
+    "condition": {
+      "urlFilter": ".com/cleint_204"
+    }
+  },
+  {
+    "id": 5,
+    "action": {
+      "type":"block"
+    },
+    "condition": {
+      "urlFilter": "googletagmanager.com/gtm.js"
+    }
+  },
+  {
+    "id": 6,
+    "action": {
+      "type":"block"
+    },
+    "condition": {
+      "initiatorDomains": [
+        "note.com"
+      ],
+      "urlFilter": "/trackings/fp"
+    }
+  },
+  {
+    "id": 7,
     "action": {
       "type": "block"
     },
@@ -41,7 +83,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 8,
     "action": {
       "type": "modifyHeaders",
       "requestHeaders": [
@@ -69,25 +111,7 @@
     }
   },
   {
-    "id": 5,
-    "action": {
-      "type": "modifyHeaders",
-      "requestHeaders": [
-        {
-          "header": "accept",
-          "operation": "remove"
-        }
-      ]
-    },
-    "condition": {
-      "excludedRequestDomains": [
-        "www.facebook.com",
-        "tumblr.com"
-      ]
-    }
-  },
-  {
-    "id": 6,
+    "id": 9,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -118,13 +142,14 @@
     }
   },
   {
-    "id": 7,
+    "id": 10,
     "action": {
       "type": "redirect",
       "redirect": {
         "transform": {
           "queryTransform": {
             "removeParams": [
+              "hl",
               "locale"
             ]
           }
@@ -142,7 +167,7 @@
     }
   },
   {
-    "id": 8,
+    "id": 11,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -174,7 +199,7 @@
     }
   },
   {
-    "id": 9,
+    "id": 12,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -193,7 +218,30 @@
     }
   },
   {
-    "id": 10,
+    "id": 13,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "removeParams": [
+              "sub_rt"
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "requestDomains": [
+        "note.com"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 14,
     "action": {
       "type": "redirect",
       "redirect": {
