@@ -116,7 +116,6 @@
       "type": "redirect",
       "redirect": {
         "transform": {
-          "host": "www.youtube.com",
           "queryTransform": {
             "removeParams": [
               "app",
@@ -130,7 +129,7 @@
       }
     },
     "condition": {
-      "requestDomains": [    
+      "requestDomains": [
         "m.youtube.com",    
         "www.youtube.com",
         "youtu.be"
@@ -199,7 +198,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 11,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -218,7 +217,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 12,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -241,7 +240,55 @@
     }
   },
   {
+    "id": 13,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "removeParams": [
+              "si",
+              "utm_source"
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "requestDomains": [
+        "open.spotify.com"
+      ],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
     "id": 14,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "removeParams": [
+              "sub_rt"
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "requestDomains": [
+        "note.com"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 15,
     "action": {
       "type": "redirect",
       "redirect": {
