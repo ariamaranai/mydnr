@@ -8,6 +8,7 @@
       "requestDomains": [
         "adtrust.appspot.com",
         "analytics.tver.jp",
+        "api.narrativ.ai",
         "c.amazon-adsystem.com",
         "delivery.adrecover.com",  
         "gae2-spclient.spotify.com",
@@ -88,16 +89,6 @@
     "id": 8,
     "action": {
       "type": "modifyHeaders",
-      "requestHeaders": [
-        {
-          "header": "accept-language",
-          "operation": "remove"
-        },
-        {
-          "header": "alt-used",
-          "operation": "remove"
-        }
-      ],
       "responseHeaders": [
         {
           "header": "content-security-policy",
