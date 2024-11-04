@@ -6,9 +6,11 @@
     },
     "condition": {
       "requestDomains": [
+        "adtrust.appspot.com",
         "analytics.tver.jp",
         "c.amazon-adsystem.com",
-        "delivery.adrecover.com",
+        "delivery.adrecover.com",  
+        "gae2-spclient.spotify.com",
         "jnn-pa.googleapis.com",
         "logcollector.note.com",
         "pagead2.googlesyndication.com",
@@ -28,7 +30,7 @@
       "type":"block"
     },
     "condition": {
-      "urlFilter": ".com/gen_204"
+      "urlFilter": "/gen_204"
     }
   },
   {
@@ -37,7 +39,7 @@
       "type":"block"
     },
     "condition": {
-      "urlFilter": ".com/generate_204"
+      "urlFilter": "/generate_204"
     }
   },
   {
@@ -46,7 +48,7 @@
       "type":"block"
     },
     "condition": {
-      "urlFilter": ".com/cleint_204"
+      "urlFilter": "/cleint_204"
     }
   },
   {
