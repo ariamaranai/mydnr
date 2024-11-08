@@ -7,6 +7,7 @@
     "condition": {
       "requestDomains": [
         "ad-optima.com",
+        "adcdn.goo.ne.jp",
         "ads.stickyadstv.com",
         "adtrust.appspot.com",
         "analytics.tver.jp",
@@ -19,6 +20,7 @@
         "clb.yahoo.co.jp",
         "cm.g.doubleclick.net",
         "config.aps.amazon-adsystem.com",
+        "counter1.fc2.com",
         "delivery.adrecover.com",
         "eb2.3lift.com",
         "googleads.g.doubleclick.net",
@@ -27,6 +29,7 @@
         "image6.pubmatic.com",
         "image8.pubmatic.com",
         "jnn-pa.googleapis.com",
+        "lk.ameba.jp",
         "logcollector.note.com",
         "ogads-pa.clients6.google.com",
         "pagead2.googlesyndication.com",
