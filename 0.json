@@ -119,6 +119,15 @@
       "type": "block"
     },
     "condition": {
+      "urlFilter": "||parts.blog.livedoor.jp/js/smartphone.js"
+    }
+  },
+  {
+    "id": 10,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
       "resourceTypes": [
         "ping",
         "csp_report"
@@ -126,7 +135,7 @@
     }
   },
   {
-    "id": 10,
+    "id": 100,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -145,7 +154,7 @@
     }
   },
   {
-    "id": 11,
+    "id": 101,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -175,7 +184,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 102,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -201,7 +210,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 103,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -233,7 +242,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 104,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -252,7 +261,7 @@
     }
   },
   {
-    "id": 15,
+    "id": 105,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -275,7 +284,7 @@
     }
   },
   {
-    "id": 16,
+    "id": 106,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -299,7 +308,7 @@
     }
   },
   {
-    "id": 17,
+    "id": 107,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -321,7 +330,7 @@
     }
   },
   {
-    "id": 18,
+    "id": 108,
     "action": {
       "type": "redirect",
       "redirect": {
