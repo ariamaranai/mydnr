@@ -14,9 +14,11 @@
         "c.amazon-adsystem.com",
         "cdn.cookielaw.org",
         "cdn.privacy.paramount.com",
+        "cm.g.doubleclick.net",
         "config.aps.amazon-adsystem.com",
         "delivery.adrecover.com",
         "eb2.3lift.com",
+        "ib.adnxs.com",
         "image6.pubmatic.com", 
         "jnn-pa.googleapis.com",
         "logcollector.note.com",
@@ -28,10 +30,13 @@
         "sync.1rx.io",
         "sync.getpublica.com",
         "sync.richaudience.com",
+        "sync.targeting.unrulymedia.com",
         "ups.analytics.yahoo.com",
+        "usersync.getpublica.com",
         "www.google-analytics.com",
         "www.googletagmanager.com",
-        "www.googletagservices.com"
+        "www.googletagservices.com",
+        "x.bidswitch.net"
       ]
     }
   },
