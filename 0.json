@@ -18,8 +18,11 @@
         "config.aps.amazon-adsystem.com",
         "delivery.adrecover.com",
         "eb2.3lift.com",
+        "googleads.g.doubleclick.net",
+        "static.doubleclick.net",
         "ib.adnxs.com",
-        "image6.pubmatic.com", 
+        "image6.pubmatic.com",
+        "image8.pubmatic.com",
         "jnn-pa.googleapis.com",
         "logcollector.note.com",
         "pagead2.googlesyndication.com",
@@ -85,7 +88,7 @@
       "type": "block"
     },
     "condition": {
-      "urlFilter": "||accounts.google.com/RotateCookiesPage"
+      "urlFilter": "||www.gstatic.com/*cast_sender.js"
     }
   },
   {
@@ -94,7 +97,7 @@
       "type": "block"
     },
     "condition": {
-      "urlFilter": "||www.google.com/xjs/"
+      "urlFilter": "||accounts.google.com/RotateCookiesPage"
     }
   },
   {
