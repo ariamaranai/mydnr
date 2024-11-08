@@ -68,23 +68,14 @@
       "type":"block"
     },
     "condition": {
-      "urlFilter": "googletagmanager.com/gtm.js"
+      "initiatorDomains": [
+        "note.com"
+      ],
+      "urlFilter": "/trackings/"
     }
   },
   {
     "id": 6,
-    "action": {
-      "type":"block"
-    },
-    "condition": {
-      "initiatorDomains": [
-        "note.com"
-      ],
-      "urlFilter": "/trackings/fp"
-    }
-  },
-  {
-    "id": 7,
     "action": {
       "type": "block"
     },
@@ -96,25 +87,27 @@
     }
   },
   {
-    "id": 8,
+    "id": 7,
     "action": {
-      "type": "modifyHeaders",
-      "responseHeaders": [
-        {
-          "header": "content-security-policy",
-          "operation": "remove"
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "www.google.com"
         }
-      ]
+      }
     },
     "condition": {
+      "requestDomains": [
+        "google.com",
+        "www.google.co.jp"
+      ],
       "resourceTypes": [
-        "main_frame",
-        "sub_frame"
+        "main_frame"
       ]
     }
   },
   {
-    "id": 9,
+    "id": 8,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -144,7 +137,7 @@
     }
   },
   {
-    "id": 10,
+    "id": 9,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -152,7 +145,8 @@
           "queryTransform": {
             "removeParams": [
               "hl",
-              "locale"
+              "locale",
+              "ref"
             ]
           }
         }
@@ -169,7 +163,7 @@
     }
   },
   {
-    "id": 11,
+    "id": 10,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -201,7 +195,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 11,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -220,7 +214,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 12,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -243,7 +237,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 13,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -262,8 +256,24 @@
         "open.spotify.com"
       ],
       "resourceTypes": [
-        "main_frame",
-        "sub_frame"
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "news.netkeiba.com"
+        }
+      }
+    },
+    "condition": {
+      "requestDomains": ["news.sp.netkeiba.com"],
+      "resourceTypes": [
+        "main_frame"
       ]
     }
   },
@@ -273,18 +283,12 @@
       "type": "redirect",
       "redirect": {
         "transform": {
-          "queryTransform": {
-            "removeParams": [
-              "sub_rt"
-            ]
-          }
+          "host": "race.netkeiba.com"
         }
       }
     },
     "condition": {
-      "requestDomains": [
-        "note.com"
-      ],
+      "requestDomains": ["race.sp.netkeiba.com"],
       "resourceTypes": [
         "main_frame"
       ]
@@ -292,6 +296,74 @@
   },
   {
     "id": 16,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "nar.netkeiba.com"
+        }
+      }
+    },
+    "condition": {
+      "requestDomains": ["nar.sp.netkeiba.com"],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "yoso.netkeiba.com"
+        }
+      }
+    },
+    "condition": {
+      "requestDomains": ["yoso.sp.netkeiba.com"],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "owner.netkeiba.com"
+        }
+      }
+    },
+    "condition": {
+      "requestDomains": ["owner.sp.netkeiba.com"],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "pog.netkeiba.com"
+        }
+      }
+    },
+    "condition": {
+      "requestDomains": ["pog.sp.netkeiba.com"],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 20,
     "action": {
       "type": "redirect",
       "redirect": {
