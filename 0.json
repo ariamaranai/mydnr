@@ -14,6 +14,7 @@
         "c.amazon-adsystem.com",
         "cdn.cookielaw.org",
         "cdn.privacy.paramount.com",
+        "clb.yahoo.co.jp",
         "cm.g.doubleclick.net",
         "config.aps.amazon-adsystem.com",
         "delivery.adrecover.com",
@@ -25,6 +26,7 @@
         "image8.pubmatic.com",
         "jnn-pa.googleapis.com",
         "logcollector.note.com",
+        "ogads-pa.clients6.google.com",
         "pagead2.googlesyndication.com",
         "qoe.lemino.docomo.ne.jp",
         "securepubads.g.doubleclick.net",
@@ -36,10 +38,12 @@
         "sync.targeting.unrulymedia.com",
         "ups.analytics.yahoo.com",
         "usersync.getpublica.com",
+        "widget-view.dmm.co.jp",
         "www.google-analytics.com",
         "www.googletagmanager.com",
         "www.googletagservices.com",
-        "x.bidswitch.net"
+        "x.bidswitch.net",
+        "yads.c.yimg.jp"
       ]
     }
   },
