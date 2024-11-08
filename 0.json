@@ -106,6 +106,15 @@
       "type": "block"
     },
     "condition": {
+      "urlFilter": "||b.st-hatena.com/*/00000.gif"
+    }
+  },
+  {
+    "id": 9,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
       "resourceTypes": [
         "ping",
         "csp_report"
@@ -113,7 +122,7 @@
     }
   },
   {
-    "id": 9,
+    "id": 10,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -132,7 +141,7 @@
     }
   },
   {
-    "id": 10,
+    "id": 11,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -162,7 +171,7 @@
     }
   },
   {
-    "id": 11,
+    "id": 12,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -188,7 +197,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 13,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -220,7 +229,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 14,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -239,7 +248,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 15,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -262,7 +271,7 @@
     }
   },
   {
-    "id": 15,
+    "id": 16,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -286,7 +295,7 @@
     }
   },
   {
-    "id": 16,
+    "id": 17,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -296,15 +305,19 @@
       }
     },
     "condition": {
-      "requestDomains": ["sp.netkeiba.com"],
-      "excludedRequestDomains": ["db.sp.netkeiba.com"],
+      "requestDomains": [
+        "sp.netkeiba.com"
+      ],
+      "excludedRequestDomains": [
+        "db.sp.netkeiba.com"
+      ],
       "resourceTypes": [
         "main_frame"
       ]
     }
   },
   {
-    "id": 17,
+    "id": 18,
     "action": {
       "type": "redirect",
       "redirect": {
