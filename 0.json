@@ -15,6 +15,7 @@
         "at.cbsi.com",
         "c.amazon-adsystem.com",
         "cdn.cookielaw.org",
+        "cdn.growthbook.io",
         "cdn.pool.st-hatena.com",
         "cdn.privacy.paramount.com",
         "clb.yahoo.co.jp",
@@ -92,21 +93,12 @@
     }
   },
   {
-    "id": 6,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "urlFilter": "||www.gstatic.com/*cast_sender.js"
-    }
-  },
-  {
     "id": 7,
     "action": {
       "type": "block"
     },
     "condition": {
-      "urlFilter": "||accounts.google.com/RotateCookiesPage"
+      "urlFilter": "/gtag.js"
     }
   },
   {
@@ -115,7 +107,7 @@
       "type": "block"
     },
     "condition": {
-      "urlFilter": "||b.st-hatena.com/*/00000.gif"
+      "urlFilter": "||www.gstatic.com/*cast_sender.js"
     }
   },
   {
@@ -124,11 +116,47 @@
       "type": "block"
     },
     "condition": {
-      "urlFilter": "||parts.blog.livedoor.jp/js/smartphone.js"
+      "urlFilter": "||accounts.google.com/RotateCookiesPage"
     }
   },
   {
     "id": 10,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||b.st-hatena.com/*/00000.gif"
+    }
+  },
+  {
+    "id": 11,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||parts.blog.livedoor.jp/js/smartphone.js"
+    }
+  },
+  {
+    "id": 12,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||netkeiba.com/*ajax"
+    }
+  },
+  {
+    "id": 13,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||www.horsetelex.com/comms/events/impression/ad"
+    }
+  },
+  {
+    "id": 14,
     "action": {
       "type": "block"
     },
