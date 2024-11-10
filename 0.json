@@ -42,6 +42,7 @@
         "jnn-pa.googleapis.com",
         "lk.ameba.jp",
         "logcollector.note.com",
+        "mon.tiktokv.com",
         "mssdk-sg.tiktok.com",
         "onetrust.com",
         "ogads-pa.clients6.google.com",
@@ -73,7 +74,7 @@
     },
     "condition": {
       "requestMethods": ["get"],
-      "regexFilter": "google.com/(gen.*_204|client_204|RotateCookiesPage|maps/preview/log204)"
+      "regexFilter": "google.com/(gen.*_204|client_204|pagead/|RotateCookiesPage|maps/preview/log204)"
     }
   },
   {
