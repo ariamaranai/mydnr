@@ -5,6 +5,15 @@
       "type": "block"
     },
     "condition": {
+      "resourceTypes": ["csp_report","ping"]
+    }
+  },
+  {
+    "id": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
       "requestDomains": [
         "ad-optima.com",
         "adcdn.goo.ne.jp",
@@ -23,6 +32,7 @@
         "config.aps.amazon-adsystem.com",
         "counter1.fc2.com",
         "delivery.adrecover.com",
+        "dsb.yahoo.co.jp",
         "eb2.3lift.com",
         "googleads.g.doubleclick.net",
         "static.doubleclick.net",
@@ -55,42 +65,46 @@
     }
   },
   {
-    "id": 2,
-    "action": {
-      "type":"block"
-    },
-    "condition": {
-      "urlFilter": "/gen_204"
-    }
-  },
-  {
     "id": 3,
     "action": {
       "type":"block"
     },
     "condition": {
-      "urlFilter": "/generate_204"
+      "requestMethods": ["get"],
+      "regexFilter": "google.com/(gen.*_204|client_204|RotateCookiesPage|maps/preview/log204)"
     }
   },
   {
     "id": 4,
     "action": {
-      "type":"block"
+      "type": "block"
     },
     "condition": {
-      "urlFilter": "/cleint_204"
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["get","head"],
+      "urlFilter": ".com/generate_204"
     }
   },
   {
     "id": 5,
     "action": {
-      "type":"block"
+      "type": "block"
     },
     "condition": {
-      "initiatorDomains": [
-        "note.com"
-      ],
-      "urlFilter": "/trackings/"
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "urlFilter": "||www.gstatic.com/cv/js/sender/v1/cast_sender."
+    }
+  },
+  {
+    "id": 6,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "urlFilter": "/gtag."
     }
   },
   {
@@ -99,7 +113,9 @@
       "type": "block"
     },
     "condition": {
-      "urlFilter": "/gtag.js"
+      "resourceTypes": ["image"],
+      "requestMethods": ["get"],
+      "urlFilter": "||b.st-hatena.com/images/users/gif/normal/00000"
     }
   },
   {
@@ -108,16 +124,21 @@
       "type": "block"
     },
     "condition": {
-      "urlFilter": "||www.gstatic.com/*cast_sender.js"
+      "resourceTypes": ["script","stylesheet","xmlhttprequest"],
+      "requestMethods": ["get","post"],
+      "urlFilter": "||cdn.netkeiba.com/*ajax"
     }
   },
   {
     "id": 9,
     "action": {
-      "type": "block"
+      "type":"block"
     },
     "condition": {
-      "urlFilter": "||accounts.google.com/RotateCookiesPage"
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["post"],
+      "domainType": "firstParty",
+      "urlFilter": "||note.com/api/v3/trackings"
     }
   },
   {
@@ -126,7 +147,9 @@
       "type": "block"
     },
     "condition": {
-      "urlFilter": "||b.st-hatena.com/*/00000.gif"
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "urlFilter": "||parts.blog.livedoor.jp/js/smartphone."
     }
   },
   {
@@ -135,41 +158,14 @@
       "type": "block"
     },
     "condition": {
-      "urlFilter": "||parts.blog.livedoor.jp/js/smartphone.js"
-    }
-  },
-  {
-    "id": 12,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "urlFilter": "||netkeiba.com/*ajax"
-    }
-  },
-  {
-    "id": 13,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["post"],
+      "domainType": "firstParty",
       "urlFilter": "||www.horsetelex.com/comms/events/impression/ad"
     }
   },
   {
-    "id": 14,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": [
-        "ping",
-        "csp_report"
-      ]
-    }
-  },
-  {
-    "id": 100,
+    "id": 101,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -179,16 +175,13 @@
       }
     },
     "condition": {
-      "requestDomains": [
-        "www.google.co.jp"
-      ],
-      "resourceTypes": [
-        "main_frame"
-      ]
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
+      "requestDomains": ["google.co.jp"]
     }
   },
   {
-    "id": 101,
+    "id": 102,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -206,19 +199,13 @@
       }
     },
     "condition": {
-      "requestDomains": [
-        "m.youtube.com",    
-        "www.youtube.com",
-        "youtu.be"
-      ],
-      "resourceTypes": [
-        "main_frame",
-        "sub_frame"
-      ]
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
+      "requestDomains": ["youtube.com","youtu.be"]
     }
   },
   {
-    "id": 102,
+    "id": 103,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -226,25 +213,23 @@
           "queryTransform": {
             "removeParams": [
               "hl",
+              "ig_rid",
               "locale",
-              "ref"
+              "ref",
+              "utm_source"
             ]
           }
         }
       }
     },
     "condition": {
-      "requestDomains": [
-        "facebook.com",
-        "instagram.com"
-      ],
-      "resourceTypes": [
-        "main_frame"
-      ]
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
+      "requestDomains": ["facebook.com","instagram.com"]
     }
   },
   {
-    "id": 103,
+    "id": 104,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -266,32 +251,9 @@
       }
     },
     "condition": {
-      "requestDomains": [
-        "tiktok.com"
-      ],
-      "resourceTypes": [
-        "main_frame",
-        "sub_frame"
-      ]
-    }
-  },
-  {
-    "id": 104,
-    "action": {
-      "type": "redirect",
-      "redirect": {
-        "transform": {
-          "host": "x.com"
-        }
-      }
-    },
-    "condition": {
-      "requestDomains": [
-        "twitter.com"
-      ],
-      "resourceTypes": [
-        "main_frame"
-      ]
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
+      "requestDomains": ["tiktok.com"]
     }
   },
   {
@@ -300,21 +262,21 @@
       "type": "redirect",
       "redirect": {
         "transform": {
+          "host": "x.com",
           "queryTransform": {
             "removeParams": [
-              "sub_rt"
+              "ref_src",
+              "src",
+              "vertical"
             ]
           }
         }
       }
     },
     "condition": {
-      "requestDomains": [
-        "note.com"
-      ],
-      "resourceTypes": [
-        "main_frame"
-      ]
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
+      "requestDomains": ["x.com","twitter.com"]
     }
   },
   {
@@ -333,12 +295,9 @@
       }
     },
     "condition": {
-      "requestDomains": [
-        "open.spotify.com"
-      ],
-      "resourceTypes": [
-        "main_frame"
-      ]
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
+      "requestDomains": ["open.spotify.com"]
     }
   },
   {
@@ -347,24 +306,64 @@
       "type": "redirect",
       "redirect": {
         "transform": {
-          "host": "netkeiba.com"
+          "queryTransform": {
+            "removeParams": [
+              "sub_rt"
+            ]
+          }
         }
       }
     },
     "condition": {
-      "requestDomains": [
-        "sp.netkeiba.com"
-      ],
-      "excludedRequestDomains": [
-        "db.sp.netkeiba.com"
-      ],
-      "resourceTypes": [
-        "main_frame"
-      ]
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
+      "requestDomains": ["note.com"]
     }
   },
   {
     "id": 108,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://\\1netkeiba.com"
+      }
+    },
+    "condition": {
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
+      "regexFilter": "^https://(news.|race.|nar.|owner.|pog.|yoso.)sp.netkeiba.com"
+    }
+  },
+  {
+    "id": 109,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://db.netkeiba.com/\\1"
+      }
+    },
+    "condition": {
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
+      "regexFilter": "^https://db.sp.netkeiba.com/(horse/|trainer/|jockey/|breeder/|owner/|race/)"
+    }
+  },
+  {
+    "id": 110,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://db.netkeiba.com/v1.1/?pid=horse_photo_list&id=\\1"
+      }
+    },
+    "condition": {
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
+      "regexFilter": "^https://db\\.netkeiba\\.com/horse/horse_photo_list\\.html\\?id=(.*)(?:$|&)"
+    }
+  },
+  {
+    "id": 111,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -374,14 +373,13 @@
       }
     },
     "condition": {
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
       "requestDomains": [
-        "nogizaka46.com",
         "sakurazaka46.com",
+        "nogizaka46.com",
         "hinatazaka46.com",
         "keyakizaka46.com"
-      ],
-      "resourceTypes": [
-        "main_frame"
       ]
     }
   }
