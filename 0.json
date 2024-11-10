@@ -334,7 +334,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "regexFilter": "^https://(news.|race.|nar.|owner.|pog.|yoso.)sp.netkeiba.com"
+      "regexFilter": "^https://(news.|nar.|owner.|pog.|yoso.)sp.netkeiba.com"
     }
   },
   {
@@ -356,6 +356,20 @@
     "action": {
       "type": "redirect",
       "redirect": {
+        "regexSubstitution": "https://race.netkeiba.com/race/result.html?race_id=\\1"
+      }
+    },
+    "condition": {
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
+      "regexFilter": "^https://race\\.sp\\.netkeiba\\.com/\\?pid=race_result&race_id=(.*)(?:$|&)"
+    }
+  },
+  {
+    "id": 111,
+    "action": {
+      "type": "redirect",
+      "redirect": {
         "regexSubstitution": "https://db.netkeiba.com/v1.1/?pid=horse_photo_list&id=\\1"
       }
     },
@@ -366,7 +380,7 @@
     }
   },
   {
-    "id": 111,
+    "id": 112,
     "action": {
       "type": "redirect",
       "redirect": {
