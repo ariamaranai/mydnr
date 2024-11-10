@@ -22,6 +22,7 @@
         "analytics.tver.jp",
         "api.narrativ.ai",
         "at.cbsi.com",
+        "bpsearch.nikkeibp.co.jp",
         "c.amazon-adsystem.com",
         "cdn.cookielaw.org",
         "cdn.growthbook.io",
@@ -31,6 +32,7 @@
         "cm.g.doubleclick.net",
         "config.aps.amazon-adsystem.com",
         "counter1.fc2.com",
+        "countrycheck.livedoor.com",
         "delivery.adrecover.com",
         "dsb.yahoo.co.jp",
         "eb2.3lift.com",
@@ -74,7 +76,7 @@
     },
     "condition": {
       "requestMethods": ["get"],
-      "regexFilter": "google.com/(gen.*_204|client_204|pagead/|RotateCookiesPage|maps/preview/log204)"
+      "regexFilter": "google.com/(gen.*_204|client_204|pagead/|maps/preview/log204)"
     }
   },
   {
@@ -164,7 +166,43 @@
       "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["post"],
       "domainType": "firstParty",
+      "urlFilter": "||news.livedoor.com/js/ads."
+    }
+  },
+  {
+    "id": 12,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["post"],
+      "domainType": "firstParty",
       "urlFilter": "||www.horsetelex.com/comms/events/impression/ad"
+    }
+  },
+  {
+    "id": 13,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["other"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "urlFilter": "/manifest.json|"
+    }
+  },
+  {
+    "id": 14,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["other"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "urlFilter": ".webmanifest|"
     }
   },
   {
