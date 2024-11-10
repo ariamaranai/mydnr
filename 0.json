@@ -17,6 +17,7 @@
       "resourceTypes": ["font"],
       "requestMethods": ["get"],
       "excludedInitiatorDomains": [
+        "source.chromium.org",
         "translate.google.com",
         "www.youtube.com"
       ]
@@ -63,6 +64,7 @@
         "onetrust.com",
         "ogads-pa.clients6.google.com",
         "pagead2.googlesyndication.com",
+        "portal-builder-acc.intfloat.com",
         "prd.api.lit.link",
         "qoe.lemino.docomo.ne.jp",
         "securepubads.g.doubleclick.net",
@@ -99,9 +101,9 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["xmlhttprequest"],
+      "resourceTypes": ["other","xmlhttprequest"],
       "requestMethods": ["get","head"],
-      "urlFilter": ".com/generate_204"
+      "urlFilter": ".com/generate_204|"
     }
   },
   {
@@ -112,7 +114,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "||www.gstatic.com/cv/js/sender/v1/cast_sender."
+      "urlFilter": "|https://www.gstatic.com/cv/js/sender/v1/cast_sender.js|"
     }
   },
   {
@@ -134,7 +136,7 @@
     "condition": {
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
-      "urlFilter": "||b.st-hatena.com/images/users/gif/normal/"
+      "urlFilter": "|https://b.st-hatena.com/images/users/gif/normal/"
     }
   },
   {
@@ -145,7 +147,7 @@
     "condition": {
       "resourceTypes": ["script","stylesheet","xmlhttprequest"],
       "requestMethods": ["get","post"],
-      "urlFilter": "||cdn.netkeiba.com/*ajax"
+      "urlFilter": "|https://cdn.netkeiba.com/*ajax"
     }
   },
   {
@@ -157,7 +159,7 @@
       "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["post"],
       "domainType": "firstParty",
-      "urlFilter": "||note.com/api/v3/trackings"
+      "urlFilter": "|https://note.com/api/v3/trackings/fp|"
     }
   },
   {
@@ -168,7 +170,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "||parts.blog.livedoor.jp/js/smartphone."
+      "regexFilter": "^https://parts.blog.livedoor.jp/js/(c2|smartphone).js$"
     }
   },
   {
@@ -180,7 +182,7 @@
       "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["post"],
       "domainType": "firstParty",
-      "urlFilter": "||news.livedoor.com/js/ads."
+      "urlFilter": "|https://news.livedoor.com/js/ads.js|"
     }
   },
   {
@@ -192,7 +194,7 @@
       "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["post"],
       "domainType": "firstParty",
-      "urlFilter": "||www.horsetelex.com/comms/events/impression/ad"
+      "urlFilter": "|https://www.horsetelex.com/comms/events/impression/ad|"
     }
   },
   {
@@ -217,6 +219,28 @@
       "requestMethods": ["get"],
       "domainType": "firstParty",
       "urlFilter": ".webmanifest|"
+    }
+  },
+  {
+    "id": 17,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "urlFilter": "/settings/ad.js|"
+    }
+  },
+  {
+    "id": 18,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "regexFilter": "^https://cdn.jsdelivr.net/(clipboard.js|npm/what-input)"
     }
   },
   {
