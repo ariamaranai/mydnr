@@ -16,11 +16,7 @@
     "condition": {
       "resourceTypes": ["font"],
       "requestMethods": ["get"],
-      "excludedInitiatorDomains": [
-        "source.chromium.org",
-        "translate.google.com",
-        "www.youtube.com"
-      ]
+      "urlFilter": "/notosansjp"
     }
   },
   {
@@ -170,7 +166,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "^https://parts.blog.livedoor.jp/js/(c2|smartphone).js$"
+      "regexFilter": "/js/(blogroll|c2|smartphone).js"
     }
   },
   {
