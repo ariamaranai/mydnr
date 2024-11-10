@@ -55,6 +55,7 @@
         "jnn-pa.googleapis.com",
         "lk.ameba.jp",
         "logcollector.note.com",
+        "log000.goo.ne.jp",
         "mon.tiktokv.com",
         "mssdk-sg.tiktok.com",
         "onetrust.com",
@@ -72,6 +73,7 @@
         "sync.targeting.unrulymedia.com",
         "ups.analytics.yahoo.com",
         "usersync.getpublica.com",
+        "wcp.taobao.com",
         "widget-view.dmm.co.jp",
         "www.google-analytics.com",
         "www.googletagmanager.com",
@@ -187,10 +189,10 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["post"],
+      "resourceTypes": ["other"],
+      "requestMethods": ["get"],
       "domainType": "firstParty",
-      "urlFilter": "|https://www.horsetelex.com/comms/events/impression/ad|"
+      "urlFilter": "/manifest.json|"
     }
   },
   {
@@ -202,23 +204,11 @@
       "resourceTypes": ["other"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "urlFilter": "/manifest.json|"
-    }
-  },
-  {
-    "id": 15,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["other"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
       "urlFilter": ".webmanifest|"
     }
   },
   {
-    "id": 17,
+    "id": 15,
     "action": {
       "type": "block"
     },
@@ -229,7 +219,7 @@
     }
   },
   {
-    "id": 18,
+    "id": 16,
     "action": {
       "type": "block"
     },
@@ -237,6 +227,30 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "regexFilter": "^https://cdn.jsdelivr.net/(clipboard.js|npm/what-input)"
+    }
+  },
+  {
+    "id": 17,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://api.bilibili.com/x/vip/ads/materials"
+    }
+  },
+  {
+    "id": 18,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["post"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://www.horsetelex.com/comms/events/impression/ad|"
     }
   },
   {
