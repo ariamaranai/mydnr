@@ -16,7 +16,7 @@
     "condition": {
       "resourceTypes": ["font"],
       "requestMethods": ["get"],
-      "urlFilter": "/notosansjp"
+      "urlFilter": "/notos"
     }
   },
   {
@@ -27,6 +27,7 @@
     "condition": {
       "requestDomains": [
         "ad-optima.com",
+        "ad.ad-arrow.com",
         "adcdn.goo.ne.jp",
         "ads.stickyadstv.com",
         "adtrust.appspot.com",
@@ -41,6 +42,7 @@
         "cdn.privacy.paramount.com",
         "clb.yahoo.co.jp",
         "cm.g.doubleclick.net",
+        "codoc.jp",
         "config.aps.amazon-adsystem.com",
         "counter1.fc2.com",
         "countrycheck.livedoor.com",
@@ -90,7 +92,7 @@
     },
     "condition": {
       "requestMethods": ["get"],
-      "regexFilter": "google.com/(gen.*_204|client_204|pagead/|maps/preview/log204)"
+      "regexFilter": "google\\.com/(gen\\.*_204|client_204|pagead/|maps/preview/log204)"
     }
   },
   {
@@ -166,29 +168,6 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "regexFilter": "/js/(blogroll|c2|smartphone).js"
-    }
-  },
-  {
-    "id": 12,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["post"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://news.livedoor.com/js/ads.js|"
-    }
-  },
-  {
-    "id": 13,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
       "resourceTypes": ["other"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
@@ -196,7 +175,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 12,
     "action": {
       "type": "block"
     },
@@ -208,29 +187,7 @@
     }
   },
   {
-    "id": 15,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "urlFilter": "/settings/ad.js|"
-    }
-  },
-  {
-    "id": 16,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "regexFilter": "^https://cdn.jsdelivr.net/(clipboard.js|npm/what-input)"
-    }
-  },
-  {
-    "id": 17,
+    "id": 13,
     "action": {
       "type": "block"
     },
@@ -242,7 +199,7 @@
     }
   },
   {
-    "id": 18,
+    "id": 14,
     "action": {
       "type": "block"
     },
@@ -420,7 +377,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "regexFilter": "^https://(news.|nar.|owner.|pog.|yoso.)sp.netkeiba.com"
+      "regexFilter": "^https://(news\\.|nar\\.|owner\\.|pog\\.|yoso\\.)sp\\.netkeiba\\.com"
     }
   },
   {
@@ -434,7 +391,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "regexFilter": "^https://db.sp.netkeiba.com/(horse/|trainer/|jockey/|breeder/|owner/|race/)"
+      "regexFilter": "^https://db\\.sp\\.netkeiba\\.com/(horse/|trainer/|jockey/|breeder/|owner/|race/)"
     }
   },
   {
