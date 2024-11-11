@@ -25,6 +25,164 @@
       "type": "block"
     },
     "condition": {
+      "resourceTypes": ["stylesheet"],
+      "requestMethods": ["get"],
+      "urlFilter": "=Noto+S"
+    }
+  },
+  {
+    "id": 4,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["other"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "urlFilter": "/manifest.json|"
+    }
+  },
+  {
+    "id": 5,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["other"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "urlFilter": ".webmanifest|"
+    }
+  },
+  {
+    "id": 6,
+    "action": {
+      "type":"block"
+    },
+    "condition": {
+      "requestMethods": ["get"],
+      "regexFilter": "google\\.com/(gen\\.*?_204|client_204|pagead/|maps/preview/log204)"
+    }
+  },
+  {
+    "id": 7,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["other","xmlhttprequest"],
+      "requestMethods": ["get","head"],
+      "urlFilter": ".com/generate_204|"
+    }
+  },
+  {
+    "id": 8,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "urlFilter": "|https://www.gstatic.com/cv/js/sender/v1/cast_sender.js|"
+    }
+  },
+  {
+    "id": 9,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script","stylesheet","xmlhttprequest"],
+      "requestMethods": ["get","post"],
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/*?ajax"
+    }
+  },
+  {
+    "id": 10,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["image"],
+      "requestMethods": ["get"],
+      "urlFilter": "|https://b.st-hatena.com/images/users/gif/normal/"
+    }
+  },
+  {
+    "id": 11,
+    "action": {
+      "type":"block"
+    },
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["post"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://note.com/api/v3/trackings/fp|"
+    }
+  },
+  {
+    "id": 12,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://api.bilibili.com/x/vip/ads/materials"
+    }
+  },
+  {
+    "id": 13,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["post"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://www.horsetelex.com/comms/events/impression/ad|"
+    }
+  },
+  {
+    "id": 14,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "urlFilter": "/settings/ad.js|"
+    }
+  },
+  {
+    "id": 15,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "regexFilter": "/js/(blogroll|c2|emoji|ads\\.0\\.5|smartphone)\\.js"
+    }
+  },
+  {
+    "id": 16,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "regexFilter": "^https://cdn\\.jsdelivr\\.net/(clipboard\\.js|npm/what-input)"
+    }
+  },
+  {
+    "id": 17,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
       "requestDomains": [
         "ad-optima.com",
         "ad.ad-arrow.com",
@@ -83,131 +241,6 @@
         "x.bidswitch.net",
         "yads.c.yimg.jp"
       ]
-    }
-  },
-  {
-    "id": 4,
-    "action": {
-      "type":"block"
-    },
-    "condition": {
-      "requestMethods": ["get"],
-      "regexFilter": "google\\.com/(gen\\.*_204|client_204|pagead/|maps/preview/log204)"
-    }
-  },
-  {
-    "id": 5,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["other","xmlhttprequest"],
-      "requestMethods": ["get","head"],
-      "urlFilter": ".com/generate_204|"
-    }
-  },
-  {
-    "id": 6,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "urlFilter": "|https://www.gstatic.com/cv/js/sender/v1/cast_sender.js|"
-    }
-  },
-  {
-    "id": 7,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "urlFilter": "/gtag."
-    }
-  },
-  {
-    "id": 8,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["image"],
-      "requestMethods": ["get"],
-      "urlFilter": "|https://b.st-hatena.com/images/users/gif/normal/"
-    }
-  },
-  {
-    "id": 9,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script","stylesheet","xmlhttprequest"],
-      "requestMethods": ["get","post"],
-      "urlFilter": "|https://cdn.netkeiba.com/*ajax"
-    }
-  },
-  {
-    "id": 10,
-    "action": {
-      "type":"block"
-    },
-    "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["post"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://note.com/api/v3/trackings/fp|"
-    }
-  },
-  {
-    "id": 11,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["other"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "urlFilter": "/manifest.json|"
-    }
-  },
-  {
-    "id": 12,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["other"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "urlFilter": ".webmanifest|"
-    }
-  },
-  {
-    "id": 13,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://api.bilibili.com/x/vip/ads/materials"
-    }
-  },
-  {
-    "id": 14,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["post"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://www.horsetelex.com/comms/events/impression/ad|"
     }
   },
   {
