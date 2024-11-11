@@ -92,9 +92,9 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["script","stylesheet","xmlhttprequest"],
+      "resourceTypes": ["image","script","stylesheet","xmlhttprequest"],
       "requestMethods": ["get","post"],
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/*?ajax"
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/.*(ajax|gif-load)"
     }
   },
   {
