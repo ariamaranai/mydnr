@@ -161,7 +161,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "/settings/ad.js|"
+      "urlFilter": "|https://i.gzn.jp/*g*.js|"
     }
   },
   {
@@ -170,14 +170,25 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["xmlhttprequest"],
+      "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "urlFilter": "|https://api.bilibili.com/x/vip/ads/materials"
+      "urlFilter": "|https://i.gzn.jp/*g*.|"
     }
   },
   {
     "id": 17,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "initiatorDomains": ["nazology.kusuguru.co.jp"],
+      "urlFilter": "/m"
+    }
+  },
+  {
+    "id": 18,
     "action": {
       "type": "block"
     },
@@ -189,7 +200,19 @@
     }
   },
   {
-    "id": 18,
+    "id": 19,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://api.bilibili.com/x/vip/ads/materials"
+    }
+  },
+  {
+    "id": 20,
     "action": {
       "type": "block"
     },
@@ -201,7 +224,7 @@
     }
   },
   {
-    "id": 19,
+    "id": 21,
     "action": {
       "type": "block"
     },
@@ -241,6 +264,7 @@
         "log000.goo.ne.jp",
         "mon.tiktokv.com",
         "mssdk-sg.tiktok.com",
+        "mt.gigazine.net",
         "onetrust.com",
         "ogads-pa.clients6.google.com",
         "pagead2.googlesyndication.com",
@@ -281,7 +305,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "requestDomains": ["google.co.jp"]
+      "urlFilter": "|https://www.google.co.jp"
     }
   },
   {
@@ -357,7 +381,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "requestDomains": ["tiktok.com"]
+      "urlFilter": "|https://tiktok.com"
     }
   },
   {
@@ -401,7 +425,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "requestDomains": ["open.spotify.com"]
+      "urlFilter": "|https://open.spotify.com"
     }
   },
   {
@@ -421,7 +445,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "requestDomains": ["note.com"]
+      "urlFilter": "|https://note.com*"
     }
   },
   {
