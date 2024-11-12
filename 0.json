@@ -83,7 +83,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://www.gstatic.com/cv/js/sender/v1/cast_sender.js|"
+      "urlFilter": "|https://www.gstatic.com/*cast_sender.js|"
     }
   },
   {
@@ -122,13 +122,12 @@
   {
     "id": 12,
     "action": {
-      "type":"block"
+      "type": "block"
     },
     "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["post"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://note.com/api/v3/trackings/fp|"
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "regexFilter": "/(ad|ads\\.0\\.5|blogroll|c2|counter|emoji|matomo|skip-link-focus-fix|smartphone|tracker).js"
     }
   },
   {
@@ -139,7 +138,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "/js/(blogroll|c2|emoji|ads\\.0\\.5|smartphone)\\.js"
+      "regexFilter": "^https://cdn\\.jsdelivr\\.net/(clipboard\\.js|npm/what-input)"
     }
   },
   {
@@ -150,7 +149,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "^https://cdn\\.jsdelivr\\.net/(clipboard\\.js|npm/what-input)"
+      "urlFilter": "|https://i.gzn.jp/*g*.js|"
     }
   },
   {
@@ -161,18 +160,19 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "/ad.js|"
+      "urlFilter": "|https://nazology.kusuguru.co.jp/*mt.js"
     }
   },
   {
     "id": 16,
     "action": {
-      "type": "block"
+      "type":"block"
     },
     "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "urlFilter": "|https://i.gzn.jp/*g*.js|"
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["post"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://note.com/api/v3/trackings/fp|"
     }
   },
   {
@@ -181,49 +181,14 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["script"],
+      "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "urlFilter": "|https://i.gzn.jp/*g*.|"
+      "urlFilter": "|https://api.bilibili.com/x/vip/ads/materials"
     }
   },
   {
     "id": 18,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "initiatorDomains": ["nazology.kusuguru.co.jp"],
-      "urlFilter": "/m"
-    }
-  },
-  {
-    "id": 19,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://api.bilibili.com/x/vip/ads/materials"
-    }
-  },
-  {
-    "id": 20,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://api.bilibili.com/x/vip/ads/materials"
-    }
-  },
-  {
-    "id": 21,
     "action": {
       "type": "block"
     },
@@ -235,15 +200,17 @@
     }
   },
   {
-    "id": 22,
+    "id": 19,
     "action": {
       "type": "block"
     },
     "condition": {
       "requestDomains": [
+        "a.ichiba.jp.rakuten-static.com",
         "ad-optima.com",
         "ad.ad-arrow.com",
         "adcdn.goo.ne.jp",
+        "admin.blog.fc2.com",
         "ads.stickyadstv.com",
         "adtrust.appspot.com",
         "analytics.tver.jp",
