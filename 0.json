@@ -161,11 +161,22 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://i.gzn.jp/*g*.js|"
+      "regexFilter": "/ad.js|"
     }
   },
   {
     "id": 16,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "urlFilter": "|https://i.gzn.jp/*g*.js|"
+    }
+  },
+  {
+    "id": 17,
     "action": {
       "type": "block"
     },
@@ -177,7 +188,7 @@
     }
   },
   {
-    "id": 17,
+    "id": 18,
     "action": {
       "type": "block"
     },
@@ -185,18 +196,6 @@
       "resourceTypes": ["script"],
       "initiatorDomains": ["nazology.kusuguru.co.jp"],
       "urlFilter": "/m"
-    }
-  },
-  {
-    "id": 18,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://api.bilibili.com/x/vip/ads/materials"
     }
   },
   {
@@ -218,13 +217,25 @@
     },
     "condition": {
       "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://api.bilibili.com/x/vip/ads/materials"
+    }
+  },
+  {
+    "id": 21,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["post"],
       "domainType": "firstParty",
       "urlFilter": "|https://www.horsetelex.com/comms/events/impression/ad|"
     }
   },
   {
-    "id": 21,
+    "id": 22,
     "action": {
       "type": "block"
     },
