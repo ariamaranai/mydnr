@@ -27,7 +27,7 @@
     "condition": {
       "resourceTypes": ["stylesheet"],
       "requestMethods": ["get"],
-      "urlFilter": "=Noto+S"
+      "urlFilter": "|https://fonts.googleapis.com/*^noto"
     }
   },
   {
@@ -137,10 +137,9 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["xmlhttprequest"],
+      "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://api.bilibili.com/x/vip/ads/materials"
+      "regexFilter": "/js/(blogroll|c2|emoji|ads\\.0\\.5|smartphone)\\.js"
     }
   },
   {
@@ -149,10 +148,9 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["post"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://www.horsetelex.com/comms/events/impression/ad|"
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "regexFilter": "^https://cdn\\.jsdelivr\\.net/(clipboard\\.js|npm/what-input)"
     }
   },
   {
@@ -172,9 +170,10 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["script"],
+      "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["get"],
-      "regexFilter": "/js/(blogroll|c2|emoji|ads\\.0\\.5|smartphone)\\.js"
+      "domainType": "firstParty",
+      "urlFilter": "|https://api.bilibili.com/x/vip/ads/materials"
     }
   },
   {
@@ -183,13 +182,26 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["script"],
+      "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["get"],
-      "regexFilter": "^https://cdn\\.jsdelivr\\.net/(clipboard\\.js|npm/what-input)"
+      "domainType": "firstParty",
+      "urlFilter": "|https://api.bilibili.com/x/vip/ads/materials"
     }
   },
   {
     "id": 18,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["post"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://www.horsetelex.com/comms/events/impression/ad|"
+    }
+  },
+  {
+    "id": 19,
     "action": {
       "type": "block"
     },
