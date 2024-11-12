@@ -92,9 +92,9 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["image","script","stylesheet","xmlhttprequest"],
-      "requestMethods": ["get","post"],
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/.*(ajax|gif-load)"
+      "resourceTypes": ["image"],
+      "requestMethods": ["get"],
+      "urlFilter": "load*.gif|"
     }
   },
   {
@@ -111,6 +111,17 @@
   {
     "id": 11,
     "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script","stylesheet","xmlhttprequest"],
+      "requestMethods": ["get","post"],
+      "urlFilter": "||netkeiba.com/*ajax"
+    }
+  },
+  {
+    "id": 12,
+    "action": {
       "type":"block"
     },
     "condition": {
@@ -121,7 +132,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 13,
     "action": {
       "type": "block"
     },
@@ -133,7 +144,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 14,
     "action": {
       "type": "block"
     },
@@ -145,7 +156,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 15,
     "action": {
       "type": "block"
     },
@@ -156,7 +167,7 @@
     }
   },
   {
-    "id": 15,
+    "id": 16,
     "action": {
       "type": "block"
     },
@@ -167,7 +178,7 @@
     }
   },
   {
-    "id": 16,
+    "id": 17,
     "action": {
       "type": "block"
     },
@@ -178,7 +189,7 @@
     }
   },
   {
-    "id": 17,
+    "id": 18,
     "action": {
       "type": "block"
     },
@@ -204,11 +215,11 @@
         "config.aps.amazon-adsystem.com",
         "counter1.fc2.com",
         "countrycheck.livedoor.com",
+        "d.line-scdn.net",
         "delivery.adrecover.com",
         "dsb.yahoo.co.jp",
         "eb2.3lift.com",
         "googleads.g.doubleclick.net",
-        "static.doubleclick.net",
         "ib.adnxs.com",
         "image6.pubmatic.com",
         "image8.pubmatic.com",
@@ -227,6 +238,8 @@
         "securepubads.g.doubleclick.net",
         "servedbyadbutler.com",
         "ssl.google-analytics.com",
+        "s-ad.rmp.rakuten.co.jp",
+        "static.doubleclick.net",
         "sync.1rx.io",
         "sync.getpublica.com",
         "sync.richaudience.com",
