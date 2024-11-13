@@ -16,7 +16,7 @@
     "condition": {
       "resourceTypes": ["font"],
       "requestMethods": ["get"],
-      "urlFilter": "/notos"
+      "regexFilter": "/(notos|mplus)"
     }
   },
   {
@@ -94,7 +94,7 @@
     "condition": {
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
-      "urlFilter": "load*.gif|"
+      "urlFilter": "|https://b.st-hatena.com/images/users/gif/normal/"
     }
   },
   {
@@ -105,7 +105,7 @@
     "condition": {
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://b.st-hatena.com/images/users/gif/normal/"
+      "urlFilter": "https://cdn.netkeiba.com/img.race/common/img/race/premium*"
     }
   },
   {
@@ -219,6 +219,7 @@
         "bpsearch.nikkeibp.co.jp",
         "c.amazon-adsystem.com",
         "cdn.cookielaw.org",
+        "cdn.findfriends.jp",
         "cdn.growthbook.io",
         "cdn.pool.st-hatena.com",
         "cdn.privacy.paramount.com",
