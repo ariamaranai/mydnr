@@ -206,7 +206,6 @@
     },
     "condition": {
       "requestDomains": [
-        "a.ichiba.jp.rakuten-static.com",
         "ad-optima.com",
         "ad.ad-arrow.com",
         "adcdn.goo.ne.jp",
@@ -238,6 +237,7 @@
         "image6.pubmatic.com",
         "image8.pubmatic.com",
         "jnn-pa.googleapis.com",
+        "jp.rakuten-static.com",
         "lk.ameba.jp",
         "logcollector.note.com",
         "log000.goo.ne.jp",
@@ -424,7 +424,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://note.com*"
+      "urlFilter": "|https://note.com"
     }
   },
   {
