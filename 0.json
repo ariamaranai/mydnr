@@ -27,7 +27,7 @@
     "condition": {
       "resourceTypes": ["stylesheet"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://fonts.googleapis.com/*^noto"
+      "regexFilter": "https://fonts.googleapis.com/.*?(noto|mplus)"
     }
   },
   {
