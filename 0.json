@@ -126,9 +126,9 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["image"],
+      "resourceTypes": ["image","script","stylesheet"],
       "requestMethods": ["get"],
-      "urlFilter": "https://cdn.netkeiba.com/img.race/common/img/race/premium*"
+      "urlFilter": "|https://cdn.netkeiba.com/img.*sp/"
     }
   },
   {
@@ -137,9 +137,9 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["script"],
+      "resourceTypes": ["image"],
       "requestMethods": ["get"],
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/img.db/common/js/(get_ad_request|jquery\\.touchSwipe\\.min|tabs_hover)"
+      "urlFilter": "|https://cdn.netkeiba.com/img.race/common/img/race/premium*"
     }
   },
   {
@@ -150,7 +150,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "/(ad|ads\\.0\\.5|blogroll|c2|counter|emoji|matomo|skip-link-focus-fix|smartphone|tracker).js"
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img\\..*?/(get_ad_request|jquery\\.touchSwipe\\.min|table_hover)"
     }
   },
   {
@@ -161,7 +161,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "^https://cdn\\.jsdelivr\\.net/(clipboard\\.js|npm/what-input)"
+      "regexFilter": "/(ad|ads\\.0\\.5|blogroll|c2|counter|emoji|matomo|skip-link-focus-fix|smartphone|tracker).js"
     }
   },
   {
@@ -172,7 +172,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://i.gzn.jp/*g*.js|"
+      "regexFilter": "^https://cdn\\.jsdelivr\\.net/(clipboard\\.js|npm/what-input)"
     }
   },
   {
@@ -183,11 +183,22 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://nazology.kusuguru.co.jp/*mt.js"
+      "urlFilter": "|https://i.gzn.jp/*g*.js|"
     }
   },
   {
     "id": 18,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "urlFilter": "|https://nazology.kusuguru.co.jp/*mt.js"
+    }
+  },
+  {
+    "id": 19,
     "action": {
       "type":"block"
     },
@@ -199,7 +210,7 @@
     }
   },
   {
-    "id": 19,
+    "id": 20,
     "action": {
       "type": "block"
     },
@@ -211,7 +222,7 @@
     }
   },
   {
-    "id": 20,
+    "id": 21,
     "action": {
       "type": "block"
     },
@@ -223,7 +234,7 @@
     }
   },
   {
-    "id": 21,
+    "id": 22,
     "action": {
       "type": "block"
     },
