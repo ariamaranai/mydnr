@@ -103,9 +103,9 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["image"],
-      "requestMethods": ["get"],
-      "urlFilter": "https://cdn.netkeiba.com/img.race/common/img/race/premium*"
+      "resourceTypes": ["script","stylesheet","xmlhttprequest"],
+      "requestMethods": ["get","post"],
+      "urlFilter": "||netkeiba.com/*ajax"
     }
   },
   {
@@ -114,9 +114,10 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["script","stylesheet","xmlhttprequest"],
-      "requestMethods": ["get","post"],
-      "urlFilter": "||netkeiba.com/*ajax"
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://db.netkeiba.com/__utm.js|"
     }
   },
   {
@@ -125,9 +126,9 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["script"],
+      "resourceTypes": ["image"],
       "requestMethods": ["get"],
-      "regexFilter": "/(ad|ads\\.0\\.5|blogroll|c2|counter|emoji|matomo|skip-link-focus-fix|smartphone|tracker).js"
+      "urlFilter": "https://cdn.netkeiba.com/img.race/common/img/race/premium*"
     }
   },
   {
@@ -138,7 +139,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "^https://cdn\\.jsdelivr\\.net/(clipboard\\.js|npm/what-input)"
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img.db/common/js/(get_ad_request|jquery\\.touchSwipe\\.min|tabs_hover)"
     }
   },
   {
@@ -149,7 +150,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://i.gzn.jp/*g*.js|"
+      "regexFilter": "/(ad|ads\\.0\\.5|blogroll|c2|counter|emoji|matomo|skip-link-focus-fix|smartphone|tracker).js"
     }
   },
   {
@@ -160,11 +161,33 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://nazology.kusuguru.co.jp/*mt.js"
+      "regexFilter": "^https://cdn\\.jsdelivr\\.net/(clipboard\\.js|npm/what-input)"
     }
   },
   {
     "id": 16,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "urlFilter": "|https://i.gzn.jp/*g*.js|"
+    }
+  },
+  {
+    "id": 17,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "urlFilter": "|https://nazology.kusuguru.co.jp/*mt.js"
+    }
+  },
+  {
+    "id": 18,
     "action": {
       "type":"block"
     },
@@ -176,7 +199,7 @@
     }
   },
   {
-    "id": 17,
+    "id": 19,
     "action": {
       "type": "block"
     },
@@ -188,7 +211,7 @@
     }
   },
   {
-    "id": 18,
+    "id": 20,
     "action": {
       "type": "block"
     },
@@ -200,7 +223,7 @@
     }
   },
   {
-    "id": 19,
+    "id": 21,
     "action": {
       "type": "block"
     },
@@ -243,6 +266,7 @@
         "mon.tiktokv.com",
         "mssdk-sg.tiktok.com",
         "mt.gigazine.net",
+        "netdreamersad.durasite.net",
         "onetrust.com",
         "ogads-pa.clients6.google.com",
         "pagead2.googlesyndication.com",
