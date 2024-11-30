@@ -215,6 +215,28 @@
       "type": "block"
     },
     "condition": {
+      "resourceTypes": ["image"],
+      "requestMethods": ["get"],
+      "urlFilter": "|https://i0.hdslb.com/*svg|"
+    }
+  },
+  {
+    "id": 21,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["image"],
+      "requestMethods": ["get"],
+      "urlFilter": "|https://i0.hdslb.com/bfs/sycp/sanlian"
+    }
+  },
+  {
+    "id": 22,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
       "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
@@ -222,7 +244,7 @@
     }
   },
   {
-    "id": 21,
+    "id": 23,
     "action": {
       "type": "block"
     },
@@ -234,7 +256,7 @@
     }
   },
   {
-    "id": 22,
+    "id": 24,
     "action": {
       "type": "block"
     },
@@ -272,7 +294,6 @@
         "eb2.3lift.com",
         "flsrv.net",
         "googleads.g.doubleclick.net",
-        "i0.hdslb.com",
         "ib.adnxs.com",
         "image6.pubmatic.com",
         "image8.pubmatic.com",
