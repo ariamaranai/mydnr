@@ -126,9 +126,9 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["image","script","stylesheet"],
+      "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://cdn.netkeiba.com/img.*sp/"
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img.*?(loadFif|monthly_goods_link|user\\.action)"
     }
   },
   {
@@ -247,8 +247,11 @@
         "ads.stickyadstv.com",
         "adtrust.appspot.com",
         "analytics.tver.jp",
+        "api.live.bilibili.com",
         "api.narrativ.ai",
+        "assets.getpocket.com",
         "at.cbsi.com",
+        "bid.ssp.bance.jp",
         "bpsearch.nikkeibp.co.jp",
         "c.amazon-adsystem.com",
         "cdn.cookielaw.org",
@@ -258,6 +261,7 @@
         "cdn.privacy.paramount.com",
         "clb.yahoo.co.jp",
         "cm.g.doubleclick.net",
+        "cm.bilibili.com",
         "codoc.jp",
         "config.aps.amazon-adsystem.com",
         "counter1.fc2.com",
@@ -266,10 +270,13 @@
         "delivery.adrecover.com",
         "dsb.yahoo.co.jp",
         "eb2.3lift.com",
+        "flsrv.net",
         "googleads.g.doubleclick.net",
+        "i0.hdslb.com",
         "ib.adnxs.com",
         "image6.pubmatic.com",
         "image8.pubmatic.com",
+        "impression.biligame.com",
         "jp.rakuten-static.com",
         "lk.ameba.jp",
         "logcollector.note.com",
@@ -284,6 +291,7 @@
         "portal-builder-acc.intfloat.com",
         "prd.api.lit.link",
         "qoe.lemino.docomo.ne.jp",
+        "ratel-ad.com",
         "securepubads.g.doubleclick.net",
         "servedbyadbutler.com",
         "ssl.google-analytics.com",
@@ -300,6 +308,7 @@
         "www.google-analytics.com",
         "www.googletagmanager.com",
         "www.googletagservices.com",
+        "www.line-website.com",
         "x.bidswitch.net",
         "yads.c.yimg.jp"
       ]
