@@ -27,6 +27,7 @@
     "condition": {
       "resourceTypes": ["stylesheet"],
       "requestMethods": ["get"],
+      "domainType": "thirdParty",
       "regexFilter": "https://fonts.googleapis.com/.*?(noto|mplus)"
     }
   },
@@ -39,19 +40,7 @@
       "resourceTypes": ["other"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "urlFilter": "/manifest.json|"
-    }
-  },
-  {
-    "id": 5,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["other"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "urlFilter": ".webmanifest|"
+      "regexFilter": "(.webmanifest|/manifest.json)$"
     }
   },
   {
@@ -83,6 +72,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
+      "domainType": "thirdParty",
       "urlFilter": "|https://www.gstatic.com/*/cast_*.js"
     }
   },
@@ -92,13 +82,38 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["script","stylesheet","xmlhttprequest"],
-      "requestMethods": ["get","post"],
-      "urlFilter": "||netkeiba.com/*ajax"
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "regexFilter": "^https://(maps|translate).goo"
     }
   },
   {
     "id": 10,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["sub_frame"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "urlFilter": "|https://www.google.com/maps/embed/"
+    }
+  },
+  {
+    "id": 11,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script","stylesheet","xmlhttprequest"],
+      "requestMethods": ["get","post"],
+      "domainType": "firstParty",
+      "urlFilter": "||netkeiba.com/*ajax"
+    }
+  },
+  {
+    "id": 12,
     "action": {
       "type": "block"
     },
@@ -110,28 +125,6 @@
     }
   },
   {
-    "id": 11,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/img.*?(loadFif|monthly_goods_link|user\\.action)"
-    }
-  },
-  {
-    "id": 12,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["image"],
-      "requestMethods": ["get"],
-      "urlFilter": "|https://cdn.netkeiba.com/img.race/common/img/race/premium*"
-    }
-  },
-  {
     "id": 13,
     "action": {
       "type": "block"
@@ -139,7 +132,8 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/img\\..*?/(get_ad_request|jquery\\.touchSwipe\\.min|table_hover)"
+      "domainType": "firstParty",
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img.*?(loadFif|monthly_goods_link|user\\.action)"
     }
   },
   {
@@ -148,9 +142,10 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["script"],
+      "resourceTypes": ["image"],
       "requestMethods": ["get"],
-      "regexFilter": "/(ad|ads\\.0\\.5|blogroll|c2|counter|emoji|matomo|skip-link-focus-fix|smartphone|tracker).js"
+      "domainType": "firstParty",
+      "urlFilter": "|https://cdn.netkeiba.com/img.race/common/img/race/premium*"
     }
   },
   {
@@ -161,7 +156,8 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "^https://cdn\\.jsdelivr\\.net/(clipboard\\.js|npm/what-input)"
+      "domainType": "firstParty",
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img\\..*?/(get_ad_request|jquery\\.touchSwipe\\.min|nk_last_login|table_hover)"
     }
   },
   {
@@ -170,9 +166,9 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["stylesheet"],
+      "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://github.githubassets.com/assets/light*.css|"
+      "regexFilter": "/(gtag|ad|ads\\.0\\.5|blogroll|c2|counter|emoji|matomo|skip-link-focus-fix|smartphone|tracker).js"
     }
   },
   {
@@ -184,19 +180,19 @@
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "urlFilter": "|https://developer.mozilla.org/pimg/*"
+      "urlFilter": "|https://developer.mozilla.org/pimg/"
     }
   },
   {
     "id": 18,
     "action": {
-      "type":"block"
+      "type": "block"
     },
     "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["post"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://note.com/api/v3/trackings/fp|"
+      "resourceTypes": ["stylesheet"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "urlFilter": "|https://github.githubassets.com/assets/light*.css|"
     }
   },
   {
@@ -207,22 +203,12 @@
     "condition": {
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://i0.hdslb.com/*svg|"
+      "domainType": "thirdParty",
+      "regexFilter": "^https://i0\\.hdslb\\.com/bfs/[^a]"
     }
   },
   {
     "id": 20,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["image"],
-      "requestMethods": ["get"],
-      "regexFilter": "^https://i0\\.hdslb\\.com/bfs/sycp/(creative_img|sanlian)"
-    }
-  },
-  {
-    "id": 21,
     "action": {
       "type": "block"
     },
@@ -234,6 +220,18 @@
     }
   },
   {
+    "id": 21,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["get","post"],
+      "domainType": "thirdParty",
+      "urlFilter": "|https://data.bilibili.com/*log/"
+    }
+  },
+  {
     "id": 22,
     "action": {
       "type": "block"
@@ -241,6 +239,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
+      "domainType": "thirdParty",
       "urlFilter": "|https://i.gzn.jp/*g*.js|"
     }
   },
@@ -252,22 +251,48 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
+      "domainType": "firstParty",
       "urlFilter": "|https://nazology.kusuguru.co.jp/*mt.js"
     }
   },
   {
     "id": 24,
     "action": {
+      "type":"block"
+    },
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["post"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://note.com/api/v3/trackings/fp|"
+    }
+  },
+  {
+    "id": 25,
+    "action": {
       "type": "block"
     },
     "condition": {
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
+      "domainType": "thirdParty",
       "urlFilter": "|https://b.st-hatena.com/images/users/gif/normal/"
     }
   },
   {
-    "id": 25,
+    "id": 26,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "regexFilter": "^https://cdn\\.jsdelivr\\.net/(clipboard\\.js|npm/what-input)"
+    }
+  },
+  {
+    "id": 27,
     "action": {
       "type": "block"
     },
@@ -279,7 +304,7 @@
     }
   },
   {
-    "id": 26,
+    "id": 28,
     "action": {
       "type": "block"
     },
@@ -304,6 +329,7 @@
         "cdn.growthbook.io",
         "cdn.pool.st-hatena.com",
         "cdn.privacy.paramount.com",
+        "cdn.webpush.jp",
         "clb.yahoo.co.jp",
         "cm.g.doubleclick.net",
         "cm.bilibili.com",
@@ -396,6 +422,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
+      "domainType": "firstParty",
       "requestDomains": ["youtube.com","youtu.be"]
     }
   },
@@ -420,6 +447,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
+      "domainType": "firstParty",
       "requestDomains": ["facebook.com","instagram.com"]
     }
   },
@@ -448,6 +476,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
+      "domainType": "firstParty",
       "urlFilter": "|https://tiktok.com"
     }
   },
@@ -471,6 +500,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
+      "domainType": "firstParty",
       "requestDomains": ["x.com","twitter.com"]
     }
   },
@@ -492,6 +522,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
+      "domainType": "firstParty",
       "urlFilter": "|https://open.spotify.com"
     }
   },
@@ -512,6 +543,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
+      "domainType": "firstParty",
       "urlFilter": "|https://note.com"
     }
   },
@@ -526,6 +558,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
+      "domainType": "firstParty",
       "regexFilter": "^https://(news\\.|nar\\.|owner\\.|pog\\.|yoso\\.)sp\\.netkeiba\\.com"
     }
   },
@@ -540,6 +573,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
+      "domainType": "firstParty",
       "regexFilter": "^https://db\\.sp\\.netkeiba\\.com/(horse/|trainer/|jockey/|breeder/|owner/|race/)"
     }
   },
@@ -554,6 +588,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
+      "domainType": "firstParty",
       "regexFilter": "^https://race\\.sp\\.netkeiba\\.com/\\?pid=race_result&race_id=(.*)(?:$|&)"
     }
   },
@@ -568,6 +603,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
+      "domainType": "firstParty",
       "regexFilter": "^https://db\\.netkeiba\\.com/horse/horse_photo_list\\.html\\?id=(.*)(?:$|&)"
     }
   },
@@ -584,6 +620,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
+      "domainType": "firstParty",
       "requestDomains": [
         "sakurazaka46.com",
         "nogizaka46.com",
