@@ -83,7 +83,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://www.gstatic.com/*cast_sender.js|"
+      "urlFilter": "|https://www.gstatic.com/*/cast_*.js"
     }
   },
   {
@@ -178,27 +178,17 @@
   {
     "id": 17,
     "action": {
-      "type": "block"
+      "type":"block"
     },
     "condition": {
-      "resourceTypes": ["script"],
+      "resourceTypes": ["image"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://i.gzn.jp/*g*.js|"
+      "domainType": "firstParty",
+      "urlFilter": "|https://developer.mozilla.org/pimg/*"
     }
   },
   {
     "id": 18,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "urlFilter": "|https://nazology.kusuguru.co.jp/*mt.js"
-    }
-  },
-  {
-    "id": 19,
     "action": {
       "type":"block"
     },
@@ -210,7 +200,7 @@
     }
   },
   {
-    "id": 20,
+    "id": 19,
     "action": {
       "type": "block"
     },
@@ -221,7 +211,7 @@
     }
   },
   {
-    "id": 21,
+    "id": 20,
     "action": {
       "type": "block"
     },
@@ -232,7 +222,7 @@
     }
   },
   {
-    "id": 22,
+    "id": 21,
     "action": {
       "type": "block"
     },
@@ -244,7 +234,29 @@
     }
   },
   {
+    "id": 22,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "urlFilter": "|https://i.gzn.jp/*g*.js|"
+    }
+  },
+  {
     "id": 23,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "urlFilter": "|https://nazology.kusuguru.co.jp/*mt.js"
+    }
+  },
+  {
+    "id": 24,
     "action": {
       "type": "block"
     },
@@ -256,7 +268,7 @@
     }
   },
   {
-    "id": 24,
+    "id": 25,
     "action": {
       "type": "block"
     },
