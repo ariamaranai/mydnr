@@ -92,24 +92,13 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["image"],
-      "requestMethods": ["get"],
-      "urlFilter": "|https://b.st-hatena.com/images/users/gif/normal/"
-    }
-  },
-  {
-    "id": 10,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
       "resourceTypes": ["script","stylesheet","xmlhttprequest"],
       "requestMethods": ["get","post"],
       "urlFilter": "||netkeiba.com/*ajax"
     }
   },
   {
-    "id": 11,
+    "id": 10,
     "action": {
       "type": "block"
     },
@@ -121,7 +110,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 11,
     "action": {
       "type": "block"
     },
@@ -132,7 +121,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 12,
     "action": {
       "type": "block"
     },
@@ -143,7 +132,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 13,
     "action": {
       "type": "block"
     },
@@ -154,7 +143,7 @@
     }
   },
   {
-    "id": 15,
+    "id": 14,
     "action": {
       "type": "block"
     },
@@ -165,7 +154,7 @@
     }
   },
   {
-    "id": 16,
+    "id": 15,
     "action": {
       "type": "block"
     },
@@ -173,6 +162,17 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "regexFilter": "^https://cdn\\.jsdelivr\\.net/(clipboard\\.js|npm/what-input)"
+    }
+  },
+  {
+    "id": 16,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["stylesheet"],
+      "requestMethods": ["get"],
+      "urlFilter": "|https://github.githubassets.com/assets/light*.css|"
     }
   },
   {
@@ -218,7 +218,7 @@
     "condition": {
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://i0.hdslb.com/bfs/sycp/sanlian"
+      "regexFilter": "^https://i0\\.hdslb\\.com/bfs/sycp/(creative_img|sanlian)"
     }
   },
   {
@@ -261,6 +261,17 @@
       "type": "block"
     },
     "condition": {
+      "resourceTypes": ["image"],
+      "requestMethods": ["get"],
+      "urlFilter": "|https://b.st-hatena.com/images/users/gif/normal/"
+    }
+  },
+  {
+    "id": 25,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
       "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["post"],
       "domainType": "firstParty",
@@ -268,7 +279,7 @@
     }
   },
   {
-    "id": 25,
+    "id": 26,
     "action": {
       "type": "block"
     },
