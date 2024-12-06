@@ -156,7 +156,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "/(gtag|ad|blogroll|c2|counter|emoji|matomo|skip-link-focus-fix|smartphone|tracker).js"
+      "regexFilter": "/(gtm|gtag|ad|counter|emoji|matomo|skip-link-focus-fix|smartphone|tracker).*?\\.js"
     }
   },
   {
@@ -215,8 +215,8 @@
     "condition": {
       "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["get","post"],
-      "domainType": "thirdParty",
-      "urlFilter": "|https://data.bilibili.com/*log/"
+      "domainType": "firstParty",
+      "urlFilter": "|https://data.bilibili.com/*log"
     }
   },
   {
@@ -228,11 +228,35 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://i.gzn.jp/*g*.js|"
+      "urlFilter": "bili-user-fingerprint.min.js|"
     }
   },
   {
     "id": 22,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["get","post","put"],
+      "domainType": "firstParty",
+      "regexFilter": "^https://gae2-spclient\\.spotify\\.com/.*?/(batch|events|time|volume)$"
+    }
+  },
+  {
+    "id": 23,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "urlFilter": "|https://i.gzn.jp/*g*.js|"
+    }
+  },
+  {
+    "id": 24,
     "action": {
       "type": "block"
     },
@@ -244,7 +268,7 @@
     }
   },
   {
-    "id": 23,
+    "id": 25,
     "action": {
       "type":"block"
     },
@@ -256,7 +280,7 @@
     }
   },
   {
-    "id": 24,
+    "id": 26,
     "action": {
       "type": "block"
     },
@@ -268,7 +292,7 @@
     }
   },
   {
-    "id": 25,
+    "id": 27,
     "action": {
       "type": "block"
     },
@@ -280,7 +304,7 @@
     }
   },
   {
-    "id": 26,
+    "id": 28,
     "action": {
       "type": "block"
     },
@@ -292,7 +316,7 @@
     }
   },
   {
-    "id": 27,
+    "id": 29,
     "action": {
       "type": "block"
     },
