@@ -1,1 +1,0 @@
-(async({action:p,storage:s,declarativeNetRequest:d})=>{let v=(await(s=s.local).get("0"))[0],{setIcon:i,onClicked:c}=p;c.addListener(()=>d(v?(i({path:"off.png"}),s.set({0:1}),v=0,{disableRulesetIds:["0"]}):(i({path:"on.png"}),s.set({0:0}),v=1,{enableRulesetIds:["0"]}))),c.dispatch(d=d.updateEnabledRulesets)})(chrome)
