@@ -106,6 +106,18 @@
       "type": "block"
     },
     "condition": {
+      "resourceTypes": ["image"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "urlFilter": "||wikipedia.org/static/images/"
+    }
+  },
+  {
+    "id": 12,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
       "resourceTypes": ["script","stylesheet","xmlhttprequest"],
       "requestMethods": ["get","post"],
       "domainType": "firstParty",
@@ -113,7 +125,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 13,
     "action": {
       "type": "block"
     },
@@ -125,7 +137,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 14,
     "action": {
       "type": "block"
     },
@@ -137,7 +149,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 15,
     "action": {
       "type": "block"
     },
@@ -149,7 +161,7 @@
     }
   },
   {
-    "id": 15,
+    "id": 16,
     "action": {
       "type": "block"
     },
@@ -160,7 +172,7 @@
     }
   },
   {
-    "id": 16,
+    "id": 17,
     "action": {
       "type":"block"
     },
@@ -172,7 +184,7 @@
     }
   },
   {
-    "id": 17,
+    "id": 18,
     "action": {
       "type": "block"
     },
@@ -184,7 +196,7 @@
     }
   },
   {
-    "id": 18,
+    "id": 19,
     "action": {
       "type": "block"
     },
@@ -196,7 +208,7 @@
     }
   },
   {
-    "id": 19,
+    "id": 20,
     "action": {
       "type": "block"
     },
@@ -208,7 +220,7 @@
     }
   },
   {
-    "id": 20,
+    "id": 21,
     "action": {
       "type": "block"
     },
@@ -220,7 +232,7 @@
     }
   },
   {
-    "id": 21,
+    "id": 22,
     "action": {
       "type": "block"
     },
@@ -232,7 +244,7 @@
     }
   },
   {
-    "id": 22,
+    "id": 23,
     "action": {
       "type": "block"
     },
@@ -244,7 +256,7 @@
     }
   },
   {
-    "id": 23,
+    "id": 24,
     "action": {
       "type": "block"
     },
@@ -256,7 +268,7 @@
     }
   },
   {
-    "id": 24,
+    "id": 25,
     "action": {
       "type": "block"
     },
@@ -268,7 +280,19 @@
     }
   },
   {
-    "id": 25,
+    "id": 26,
+    "action": {
+      "type":"block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "regexFilter": "^https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/(seo|zti)"
+    }
+  },
+  {
+    "id": 27,
     "action": {
       "type":"block"
     },
@@ -280,7 +304,7 @@
     }
   },
   {
-    "id": 26,
+    "id": 28,
     "action": {
       "type": "block"
     },
@@ -292,7 +316,7 @@
     }
   },
   {
-    "id": 27,
+    "id": 29,
     "action": {
       "type": "block"
     },
@@ -304,7 +328,7 @@
     }
   },
   {
-    "id": 28,
+    "id": 30,
     "action": {
       "type": "block"
     },
@@ -316,7 +340,7 @@
     }
   },
   {
-    "id": 29,
+    "id": 31,
     "action": {
       "type": "block"
     },
@@ -410,6 +434,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
+      "domainType": "thirdParty",
       "urlFilter": "|https://www.google.co.jp"
     }
   },
@@ -434,7 +459,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "domainType": "firstParty",
+      "domainType": "thirdParty",
       "requestDomains": ["youtube.com","youtu.be"]
     }
   },
@@ -459,7 +484,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "domainType": "firstParty",
+      "domainType": "thirdParty",
       "requestDomains": ["facebook.com","instagram.com"]
     }
   },
@@ -488,7 +513,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "domainType": "firstParty",
+      "domainType": "thirdParty",
       "urlFilter": "|https://tiktok.com"
     }
   },
@@ -512,7 +537,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "domainType": "firstParty",
+      "domainType": "thirdParty",
       "requestDomains": ["x.com","twitter.com"]
     }
   },
@@ -534,7 +559,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "domainType": "firstParty",
+      "domainType": "thirdParty",
       "urlFilter": "|https://open.spotify.com"
     }
   },
@@ -555,7 +580,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "domainType": "firstParty",
+      "domainType": "thirdParty",
       "urlFilter": "|https://note.com"
     }
   },
@@ -564,14 +589,14 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "regexSubstitution": "https://\\1netkeiba.com"
+        "regexSubstitution": "https://\\1.netkeiba.com"
       }
     },
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "regexFilter": "^https://(news\\.|nar\\.|owner\\.|pog\\.|yoso\\.)sp\\.netkeiba\\.com"
+      "domainType": "thirdParty",
+      "regexFilter": "^https://(news|nar|owner|pog|yoso)\\.sp\\.netkeiba\\.com"
     }
   },
   {
@@ -585,7 +610,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "domainType": "firstParty",
+      "domainType": "thirdParty",
       "regexFilter": "^https://db\\.sp\\.netkeiba\\.com/(horse/|trainer/|jockey/|breeder/|owner/|race/)"
     }
   },
@@ -600,8 +625,8 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "regexFilter": "^https://race\\.sp\\.netkeiba\\.com/\\?pid=race_result&race_id=(.*)(?:$|&)"
+      "domainType": "thirdParty",
+      "regexFilter": "^https://race\\.sp\\.netkeiba\\.com/\\?pid=race_result&race_id=(.*)"
     }
   },
   {
@@ -609,14 +634,14 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "regexSubstitution": "https://db.netkeiba.com/v1.1/?pid=horse_photo_list&id=\\1"
+        "regexSubstitution": "https://race.netkeiba.com/race/shutuba.html?race_id=\\1"
       }
     },
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "regexFilter": "^https://db\\.netkeiba\\.com/horse/horse_photo_list\\.html\\?id=(.*)(?:$|&)"
+      "domainType": "thirdParty",
+      "regexFilter": "^https://race\\.sp\\.netkeiba\\.com/race/shutuba\\.html\\?race_id=(.*)"
     }
   },
   {
@@ -632,13 +657,8 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "requestDomains": [
-        "sakurazaka46.com",
-        "nogizaka46.com",
-        "hinatazaka46.com",
-        "keyakizaka46.com"
-      ]
+      "domainType": "thirdParty",
+      "urlFilter": "|https://sakurazaka46.com"
     }
   }
 ]
