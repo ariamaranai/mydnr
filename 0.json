@@ -14,29 +14,6 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["font"],
-      "requestMethods": ["get"],
-      "regexFilter": "/(notos|mplus)"
-    }
-  },
-  {
-    "id": 3,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["stylesheet"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "regexFilter": "https://fonts.googleapis.com/.*?(noto|mplus)"
-    }
-  },
-  {
-    "id": 4,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
       "resourceTypes": ["other"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
@@ -44,7 +21,7 @@
     }
   },
   {
-    "id": 6,
+    "id": 3,
     "action": {
       "type":"block"
     },
@@ -54,7 +31,7 @@
     }
   },
   {
-    "id": 7,
+    "id": 4,
     "action": {
       "type": "block"
     },
@@ -65,7 +42,7 @@
     }
   },
   {
-    "id": 8,
+    "id": 5,
     "action": {
       "type": "block"
     },
@@ -77,19 +54,7 @@
     }
   },
   {
-    "id": 9,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "regexFilter": "^https://(maps|translate).goo"
-    }
-  },
-  {
-    "id": 10,
+    "id": 6,
     "action": {
       "type": "block"
     },
@@ -101,7 +66,42 @@
     }
   },
   {
-    "id": 11,
+    "id": 7,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "regexFilter": "^https://(maps|translate).goo"
+    }
+  },
+  {
+    "id": 8,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["font"],
+      "requestMethods": ["get"],
+      "regexFilter": "/(notos|mplus)"
+    }
+  },
+  {
+    "id": 9,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["stylesheet"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "regexFilter": "https://fonts.googleapis.com/.*?(noto|mplus)"
+    }
+  },
+  {
+    "id": 10,
     "action": {
       "type": "block"
     },
@@ -110,6 +110,18 @@
       "requestMethods": ["get"],
       "domainType": "firstParty",
       "urlFilter": "||wikipedia.org/static/images/"
+    }
+  },
+  {
+    "id": 11,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["image"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img.*?(ja/image/top|premium|bnr|_nk_|gif\\?2020|keirin|top_img)"
     }
   },
   {
@@ -130,10 +142,10 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["image"],
+      "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/img.*?(premium|bnr|_nk_|gif\\?2020|keirin|top_img)"
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img.*?(loadFif|monthly_goods_link|user\\.action)"
     }
   },
   {
@@ -145,7 +157,7 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/img.*?(loadFif|monthly_goods_link|user\\.action)"
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img\\..*?/(get_ad_request|jquery\\.touchSwipe\\.min|nk_last_login|table_hover)"
     }
   },
   {
@@ -156,23 +168,11 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/img\\..*?/(get_ad_request|jquery\\.touchSwipe\\.min|nk_last_login|table_hover)"
-    }
-  },
-  {
-    "id": 16,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
       "regexFilter": "/(gtm|gtag|ad|counter|emoji|matomo|skip-link-focus-fix|smartphone|tracker).*?\\.js"
     }
   },
   {
-    "id": 17,
+    "id": 16,
     "action": {
       "type":"block"
     },
@@ -184,7 +184,7 @@
     }
   },
   {
-    "id": 18,
+    "id": 17,
     "action": {
       "type": "block"
     },
@@ -196,7 +196,7 @@
     }
   },
   {
-    "id": 19,
+    "id": 18,
     "action": {
       "type": "block"
     },
@@ -208,7 +208,7 @@
     }
   },
   {
-    "id": 20,
+    "id": 19,
     "action": {
       "type": "block"
     },
@@ -220,7 +220,7 @@
     }
   },
   {
-    "id": 21,
+    "id": 20,
     "action": {
       "type": "block"
     },
@@ -232,7 +232,7 @@
     }
   },
   {
-    "id": 22,
+    "id": 21,
     "action": {
       "type": "block"
     },
@@ -241,6 +241,18 @@
       "requestMethods": ["get"],
       "domainType": "thirdParty",
       "urlFilter": "bili-user-fingerprint.min.js|"
+    }
+  },
+  {
+    "id": 22,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["stylesheet"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "urlFilter": "|https://s1.hdslb.com/bfs/static/jinkela/long/font/medium.css|"
     }
   },
   {
@@ -258,6 +270,18 @@
   {
     "id": 24,
     "action": {
+      "type":"block"
+    },
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["post"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://note.com/api/v3/trackings/fp|"
+    }
+  },
+  {
+    "id": 25,
+    "action": {
       "type": "block"
     },
     "condition": {
@@ -268,7 +292,7 @@
     }
   },
   {
-    "id": 25,
+    "id": 26,
     "action": {
       "type": "block"
     },
@@ -280,7 +304,7 @@
     }
   },
   {
-    "id": 26,
+    "id": 27,
     "action": {
       "type":"block"
     },
@@ -289,18 +313,6 @@
       "requestMethods": ["get"],
       "domainType": "firstParty",
       "regexFilter": "^https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/(seo|zti)"
-    }
-  },
-  {
-    "id": 27,
-    "action": {
-      "type":"block"
-    },
-    "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["post"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://note.com/api/v3/trackings/fp|"
     }
   },
   {
@@ -321,6 +333,17 @@
       "type": "block"
     },
     "condition": {
+      "resourceTypes": ["script","stylesheet"],
+      "requestMethods": ["get"],
+      "urlFilter": "/sweetalert"
+    }
+  },
+  {
+    "id": 30,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
@@ -328,7 +351,7 @@
     }
   },
   {
-    "id": 30,
+    "id": 31,
     "action": {
       "type": "block"
     },
@@ -340,7 +363,7 @@
     }
   },
   {
-    "id": 31,
+    "id": 32,
     "action": {
       "type": "block"
     },
@@ -501,6 +524,7 @@
               "embed_card_play",
               "embed_source",
               "is_from_webapp",
+              "lang",
               "refer",
               "referer_url",
               "referer_video_id",
