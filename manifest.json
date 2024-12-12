@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "mydnr",
   "version": "0",
-  "description": "Network filters on my Brave",
+  "description": "My custom network filters in Brave browser",
   "icons": {
     "128": "on.png"
   },
