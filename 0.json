@@ -282,18 +282,6 @@
   {
     "id": 25,
     "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["get","post","put"],
-      "domainType": "firstParty",
-      "regexFilter": "^https://gae2-spclient\\.spotify\\.com/.*?/(batch|events|time|volume)$"
-    }
-  },
-  {
-    "id": 26,
-    "action": {
       "type":"block"
     },
     "condition": {
@@ -304,7 +292,7 @@
     }
   },
   {
-    "id": 27,
+    "id": 26,
     "action": {
       "type": "block"
     },
@@ -316,7 +304,7 @@
     }
   },
   {
-    "id": 28,
+    "id": 27,
     "action": {
       "type": "block"
     },
@@ -328,7 +316,7 @@
     }
   },
   {
-    "id": 29,
+    "id": 28,
     "action": {
       "type":"block"
     },
@@ -340,7 +328,7 @@
     }
   },
   {
-    "id": 30,
+    "id": 29,
     "action": {
       "type": "block"
     },
@@ -352,7 +340,7 @@
     }
   },
   {
-    "id": 31,
+    "id": 30,
     "action": {
       "type": "block"
     },
@@ -364,7 +352,7 @@
     }
   },
   {
-    "id": 32,
+    "id": 31,
     "action": {
       "type": "block"
     },
@@ -376,7 +364,7 @@
     }
   },
   {
-    "id": 33,
+    "id": 32,
     "action": {
       "type": "block"
     },
@@ -388,7 +376,7 @@
     }
   },
   {
-    "id": 34,
+    "id": 33,
     "action": {
       "type": "block"
     },
@@ -399,7 +387,7 @@
     }
   },
   {
-    "id": 35,
+    "id": 34,
     "action": {
       "type": "block"
     },
@@ -411,7 +399,7 @@
     }
   },
   {
-    "id": 36,
+    "id": 35,
     "action": {
       "type": "block"
     },
@@ -423,7 +411,7 @@
     }
   },
   {
-    "id": 37,
+    "id": 36,
     "action": {
       "type": "block"
     },
@@ -435,7 +423,7 @@
     }
   },
   {
-    "id": 38,
+    "id": 37,
     "action": {
       "type": "block"
     },
