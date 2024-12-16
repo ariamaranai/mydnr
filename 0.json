@@ -368,6 +368,18 @@
       "type": "block"
     },
     "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://www.thoroughbredracing.com/adverts/"
+    }
+  },
+  {
+    "id": 33,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
       "requestDomains": [
         "ad-optima.com",
         "ad.ad-arrow.com",
@@ -422,10 +434,12 @@
         "prd.api.lit.link",
         "qoe.lemino.docomo.ne.jp",
         "ratel-ad.com",
+        "referrer.disqus.com",
         "securepubads.g.doubleclick.net",
         "servedbyadbutler.com",
         "ssl.google-analytics.com",
         "s-ad.rmp.rakuten.co.jp",
+        "static.addtoany.com",
         "static.doubleclick.net",
         "sync.1rx.io",
         "sync.getpublica.com",
