@@ -17,7 +17,7 @@
       "resourceTypes": ["other"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "regexFilter": "(.webmanifest|/manifest.json)$"
+      "regexFilter": "(\\.webmanifest|/manifest\\.json)$"
     }
   },
   {
@@ -74,7 +74,7 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "regexFilter": "^https://(maps|translate).goo"
+      "regexFilter": "^https://(maps|translate)\\.goo"
     }
   },
   {
@@ -97,7 +97,7 @@
       "resourceTypes": ["stylesheet"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "regexFilter": "https://fonts.googleapis.com/.*?(noto|mplus)"
+      "regexFilter": "https://fonts\\.googleapis\\.com/.*?(noto|mplus)"
     }
   },
   {
@@ -192,11 +192,35 @@
       "resourceTypes": ["stylesheet"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://github.githubassets.com/assets/light*.css|"
+      "regexFilter": "^https://github\\.githubassets\\.com/assets/(light|notifications)"
     }
   },
   {
     "id": 18,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "urlFilter": "|https://github.githubassets.com/assets/keyboard-shortcuts-dialog"
+    }
+  },
+  {
+    "id": 19,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["image"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "regexFilter": "^https://github\\.githubassets\\.com/assets/(mona|copilot)"
+    }
+  },
+  {
+    "id": 20,
     "action": {
       "type": "block"
     },
@@ -208,7 +232,7 @@
     }
   },
   {
-    "id": 19,
+    "id": 21,
     "action": {
       "type": "block"
     },
@@ -220,7 +244,7 @@
     }
   },
   {
-    "id": 20,
+    "id": 22,
     "action": {
       "type": "block"
     },
@@ -232,7 +256,7 @@
     }
   },
   {
-    "id": 21,
+    "id": 23,
     "action": {
       "type": "block"
     },
@@ -244,7 +268,7 @@
     }
   },
   {
-    "id": 22,
+    "id": 24,
     "action": {
       "type": "block"
     },
@@ -256,7 +280,7 @@
     }
   },
   {
-    "id": 23,
+    "id": 25,
     "action": {
       "type": "block"
     },
@@ -268,7 +292,7 @@
     }
   },
   {
-    "id": 24,
+    "id": 26,
     "action": {
       "type":"block"
     },
@@ -280,7 +304,7 @@
     }
   },
   {
-    "id": 25,
+    "id": 27,
     "action": {
       "type": "block"
     },
@@ -292,7 +316,7 @@
     }
   },
   {
-    "id": 26,
+    "id": 28,
     "action": {
       "type": "block"
     },
@@ -304,7 +328,7 @@
     }
   },
   {
-    "id": 27,
+    "id": 29,
     "action": {
       "type":"block"
     },
@@ -312,11 +336,11 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "regexFilter": "^https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/(seo|zti)"
+      "regexFilter": "^https://sf16-website-login\\.neutral\\.ttwstatic\\.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/(seo|zti)"
     }
   },
   {
-    "id": 28,
+    "id": 30,
     "action": {
       "type": "block"
     },
@@ -328,7 +352,43 @@
     }
   },
   {
-    "id": 29,
+    "id": 31,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "requestMethods": ["options","post"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://graph.instagram.com/logging_client_events|"
+    }
+  },
+  {
+    "id": 32,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://assets.tumblr.com/pop/js/modern/error-reporter"
+    }
+  },
+  {
+    "id": 33,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["stylesheet"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "urlFilter": "|https://assets.tumblr.com/pop/async-mobile-navigation"
+    }
+  },
+  {
+    "id": 34,
     "action": {
       "type": "block"
     },
@@ -339,7 +399,7 @@
     }
   },
   {
-    "id": 30,
+    "id": 35,
     "action": {
       "type": "block"
     },
@@ -351,7 +411,7 @@
     }
   },
   {
-    "id": 31,
+    "id": 36,
     "action": {
       "type": "block"
     },
@@ -363,7 +423,7 @@
     }
   },
   {
-    "id": 32,
+    "id": 37,
     "action": {
       "type": "block"
     },
@@ -375,7 +435,7 @@
     }
   },
   {
-    "id": 33,
+    "id": 38,
     "action": {
       "type": "block"
     },
