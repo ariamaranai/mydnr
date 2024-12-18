@@ -168,7 +168,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "/(gtm|gtag|ad|counter|emoji|matomo|skip-link-focus-fix|smartphone|tracker).*?\\.js"
+      "regexFilter": "/(gtm|gtag|ad|counter|matomo|smartphone|tracker).*?\\.js"
     }
   },
   {
@@ -264,7 +264,7 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "bili-user-fingerprint.min.js|"
+      "urlFilter": "fingerprint.min.js|"
     }
   },
   {
@@ -288,7 +288,7 @@
       "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["post"],
       "domainType": "firstParty",
-      "urlFilter": "|https://note.com/api/v3/trackings/fp|"
+      "urlFilter": "trackings/fp|"
     }
   },
   {
@@ -300,7 +300,7 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://i.gzn.jp/*g*.js|"
+      "urlFilter": "gzn.jp/*g*.js|"
     }
   },
   {
@@ -318,18 +318,6 @@
   {
     "id": 28,
     "action": {
-      "type":"block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "regexFilter": "^https://sf16-website-login\\.neutral\\.ttwstatic\\.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/(seo|zti)"
-    }
-  },
-  {
-    "id": 29,
-    "action": {
       "type": "block"
     },
     "condition": {
@@ -340,7 +328,7 @@
     }
   },
   {
-    "id": 30,
+    "id": 29,
     "action": {
       "type": "block"
     },
@@ -348,11 +336,11 @@
       "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["options","post"],
       "domainType": "firstParty",
-      "urlFilter": "|https://graph.instagram.com/logging_client_events|"
+      "urlFilter": "logging_client_events|"
     }
   },
   {
-    "id": 31,
+    "id": 30,
     "action": {
       "type": "block"
     },
@@ -364,7 +352,7 @@
     }
   },
   {
-    "id": 32,
+    "id": 31,
     "action": {
       "type": "block"
     },
@@ -376,30 +364,7 @@
     }
   },
   {
-    "id": 33,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script","stylesheet"],
-      "requestMethods": ["get"],
-      "urlFilter": "/sweetalert"
-    }
-  },
-  {
-    "id": 34,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "regexFilter": "^https://cdn\\.jsdelivr\\.net/(clipboard\\.js|npm/what-input)"
-    }
-  },
-  {
-    "id": 35,
+    "id": 32,
     "action": {
       "type": "block"
     },
@@ -407,11 +372,11 @@
       "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["post"],
       "domainType": "firstParty",
-      "urlFilter": "|https://www.horsetelex.com/comms/events/impression/ad|"
+      "urlFilter": "impression/ad|"
     }
   },
   {
-    "id": 36,
+    "id": 33,
     "action": {
       "type": "block"
     },
@@ -423,7 +388,7 @@
     }
   },
   {
-    "id": 37,
+    "id": 34,
     "action": {
       "type": "block"
     },
@@ -471,8 +436,6 @@
         "lk.ameba.jp",
         "logcollector.note.com",
         "log000.goo.ne.jp",
-        "mon.tiktokv.com",
-        "mssdk-sg.tiktok.com",
         "mt.gigazine.net",
         "netdreamersad.durasite.net",
         "onetrust.com",
