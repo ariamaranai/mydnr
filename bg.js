@@ -10,4 +10,4 @@ chrome.management.onEnabled.addListener(async info =>
   (await chrome.declarativeNetRequest.getEnabledRulesets()).length ||
   chrome.action.setIcon({ path: "off.png" })
 );
-chrome.declarativeNetRequest.updateEnabledRulesets({ enableRulesetIds: ["0"] })
+chrome.declarativeNetRequest.updateEnabledRulesets({ enableRulesetIds: ["0"] });
