@@ -563,7 +563,7 @@
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://tiktok.com"
+      "urlFilter": "|https://www.tiktok.com"
     }
   },
   {
