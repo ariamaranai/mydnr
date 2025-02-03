@@ -287,24 +287,12 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "urlFilter": "gzn.jp/*g*.js|"
-    }
-  },
-  {
-    "id": 26,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
       "domainType": "firstParty",
       "urlFilter": "|https://nazology.kusuguru.co.jp/*mt.js"
     }
   },
   {
-    "id": 27,
+    "id": 26,
     "action": {
       "type": "block"
     },
@@ -316,7 +304,7 @@
     }
   },
   {
-    "id": 28,
+    "id": 27,
     "action": {
       "type": "block"
     },
@@ -328,7 +316,7 @@
     }
   },
   {
-    "id": 29,
+    "id": 28,
     "action": {
       "type": "block"
     },
@@ -340,7 +328,7 @@
     }
   },
   {
-    "id": 30,
+    "id": 29,
     "action": {
       "type": "block"
     },
@@ -352,7 +340,7 @@
     }
   },
   {
-    "id": 31,
+    "id": 30,
     "action": {
       "type": "block"
     },
@@ -364,19 +352,7 @@
     }
   },
   {
-    "id": 32,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://www.thoroughbredracing.com/adverts/"
-    }
-  },
-  {
-    "id": 33,
+    "id": 31,
     "action": {
       "type": "block"
     },
@@ -423,7 +399,6 @@
         "lk.ameba.jp",
         "logcollector.note.com",
         "log000.goo.ne.jp",
-        "mt.gigazine.net",
         "netdreamersad.durasite.net",
         "onetrust.com",
         "ogads-pa.clients6.google.com",
