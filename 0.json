@@ -273,18 +273,6 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://nazology.kusuguru.co.jp/*mt.js"
-    }
-  },
-  {
-    "id": 25,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
@@ -292,7 +280,7 @@
     }
   },
   {
-    "id": 26,
+    "id": 25,
     "action": {
       "type": "block"
     },
@@ -304,7 +292,7 @@
     }
   },
   {
-    "id": 27,
+    "id": 26,
     "action": {
       "type": "block"
     },
@@ -316,7 +304,7 @@
     }
   },
   {
-    "id": 28,
+    "id": 27,
     "action": {
       "type": "block"
     },
@@ -328,7 +316,7 @@
     }
   },
   {
-    "id": 29,
+    "id": 28,
     "action": {
       "type": "block"
     },
@@ -340,7 +328,7 @@
     }
   },
   {
-    "id": 30,
+    "id": 29,
     "action": {
       "type": "block"
     },
