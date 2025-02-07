@@ -249,30 +249,6 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "urlFilter": "fingerprint.min.js|"
-    }
-  },
-  {
-    "id": 23,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["stylesheet"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "urlFilter": "|https://s1.hdslb.com/bfs/static/jinkela/long/font/medium.css|"
-    }
-  },
-  {
-    "id": 24,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
@@ -280,7 +256,7 @@
     }
   },
   {
-    "id": 25,
+    "id": 23,
     "action": {
       "type": "block"
     },
@@ -292,7 +268,7 @@
     }
   },
   {
-    "id": 26,
+    "id": 24,
     "action": {
       "type": "block"
     },
@@ -304,7 +280,7 @@
     }
   },
   {
-    "id": 27,
+    "id": 25,
     "action": {
       "type": "block"
     },
@@ -316,7 +292,7 @@
     }
   },
   {
-    "id": 28,
+    "id": 26,
     "action": {
       "type": "block"
     },
@@ -328,7 +304,7 @@
     }
   },
   {
-    "id": 29,
+    "id": 27,
     "action": {
       "type": "block"
     },
