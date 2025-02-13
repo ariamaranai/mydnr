@@ -14,6 +14,3 @@
     )
   );
 }
-chrome.declarativeNetRequest.updateEnabledRulesets(
-  { enableRulesetIds: ["0"] }
-);
