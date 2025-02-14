@@ -509,66 +509,6 @@
     }
   },
   {
-    "id": 108,
-    "action": {
-      "type": "redirect",
-      "redirect": {
-        "regexSubstitution": "https://\\1.netkeiba.com"
-      }
-    },
-    "condition": {
-      "resourceTypes": ["main_frame"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "regexFilter": "^https://(news|nar|owner|pog|yoso)\\.sp\\.netkeiba\\.com"
-    }
-  },
-  {
-    "id": 109,
-    "action": {
-      "type": "redirect",
-      "redirect": {
-        "regexSubstitution": "https://db.netkeiba.com/\\1"
-      }
-    },
-    "condition": {
-      "resourceTypes": ["main_frame"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "regexFilter": "^https://db\\.sp\\.netkeiba\\.com/(horse/|trainer/|jockey/|breeder/|owner/|race/)"
-    }
-  },
-  {
-    "id": 110,
-    "action": {
-      "type": "redirect",
-      "redirect": {
-        "regexSubstitution": "https://race.netkeiba.com/race/result.html?race_id=\\1"
-      }
-    },
-    "condition": {
-      "resourceTypes": ["main_frame"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "regexFilter": "^https://race\\.sp\\.netkeiba\\.com/\\?pid=race_result&race_id=(.*)"
-    }
-  },
-  {
-    "id": 111,
-    "action": {
-      "type": "redirect",
-      "redirect": {
-        "regexSubstitution": "https://race.netkeiba.com/race/shutuba.html?race_id=\\1"
-      }
-    },
-    "condition": {
-      "resourceTypes": ["main_frame"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "regexFilter": "^https://race\\.sp\\.netkeiba\\.com/race/shutuba\\.html\\?race_id=(.*)"
-    }
-  },
-  {
     "id": 112,
     "action": {
       "type": "redirect",
