@@ -154,42 +154,6 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["stylesheet"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "regexFilter": "^https://github\\.githubassets\\.com/assets/(light|notifications)"
-    }
-  },
-  {
-    "id": 15,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "urlFilter": "|https://github.githubassets.com/assets/keyboard-shortcuts-dialog"
-    }
-  },
-  {
-    "id": 16,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["image"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "regexFilter": "^https://github\\.githubassets\\.com/assets/(mona|copilot)"
-    }
-  },
-  {
-    "id": 17,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
@@ -197,7 +161,7 @@
     }
   },
   {
-    "id": 18,
+    "id": 15,
     "action": {
       "type": "block"
     },
@@ -209,7 +173,7 @@
     }
   },
   {
-    "id": 19,
+    "id": 16,
     "action": {
       "type": "block"
     },
@@ -221,7 +185,7 @@
     }
   },
   {
-    "id": 20,
+    "id": 17,
     "action": {
       "type": "block"
     },
@@ -233,7 +197,7 @@
     }
   },
   {
-    "id": 21,
+    "id": 18,
     "action": {
       "type": "block"
     },
@@ -245,7 +209,7 @@
     }
   },
   {
-    "id": 22,
+    "id": 19,
     "action": {
       "type": "block"
     },
