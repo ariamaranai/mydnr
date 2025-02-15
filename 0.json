@@ -83,29 +83,6 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["font"],
-      "requestMethods": ["get"],
-      "regexFilter": "/(notos|mplus)"
-    }
-  },
-  {
-    "id": 9,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["stylesheet"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "regexFilter": "https://fonts\\.googleapis\\.com/.*?(noto|mplus)"
-    }
-  },
-  {
-    "id": 10,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
@@ -113,7 +90,7 @@
     }
   },
   {
-    "id": 11,
+    "id": 9,
     "action": {
       "type": "block"
     },
@@ -125,7 +102,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 10,
     "action": {
       "type": "block"
     },
@@ -137,7 +114,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 11,
     "action": {
       "type": "block"
     },
@@ -149,7 +126,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 12,
     "action": {
       "type": "block"
     },
@@ -161,7 +138,7 @@
     }
   },
   {
-    "id": 15,
+    "id": 13,
     "action": {
       "type": "block"
     },
@@ -172,7 +149,7 @@
     }
   },
   {
-    "id": 16,
+    "id": 14,
     "action": {
       "type": "block"
     },
@@ -184,7 +161,7 @@
     }
   },
   {
-    "id": 17,
+    "id": 15,
     "action": {
       "type": "block"
     },
@@ -196,7 +173,7 @@
     }
   },
   {
-    "id": 18,
+    "id": 16,
     "action": {
       "type": "block"
     },
@@ -208,7 +185,7 @@
     }
   },
   {
-    "id": 19,
+    "id": 17,
     "action": {
       "type": "block"
     },
@@ -220,7 +197,7 @@
     }
   },
   {
-    "id": 20,
+    "id": 18,
     "action": {
       "type": "block"
     },
@@ -232,7 +209,7 @@
     }
   },
   {
-    "id": 21,
+    "id": 19,
     "action": {
       "type": "block"
     },
@@ -244,7 +221,7 @@
     }
   },
   {
-    "id": 22,
+    "id": 20,
     "action": {
       "type": "block"
     },
@@ -256,7 +233,7 @@
     }
   },
   {
-    "id": 23,
+    "id": 21,
     "action": {
       "type": "block"
     },
@@ -268,7 +245,7 @@
     }
   },
   {
-    "id": 24,
+    "id": 22,
     "action": {
       "type": "block"
     },
@@ -509,7 +486,7 @@
     }
   },
   {
-    "id": 112,
+    "id": 108,
     "action": {
       "type": "redirect",
       "redirect": {
