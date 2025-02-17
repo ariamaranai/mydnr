@@ -78,18 +78,6 @@
     }
   },
   {
-    "id": 8,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["image"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "urlFilter": "||wikipedia.org/static/images/"
-    }
-  },
-  {
     "id": 9,
     "action": {
       "type": "block"
