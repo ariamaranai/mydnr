@@ -166,30 +166,6 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://assets.tumblr.com/pop/js/modern/error-reporter"
-    }
-  },
-  {
-    "id": 17,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["stylesheet"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "urlFilter": "|https://assets.tumblr.com/pop/async-mobile-navigation"
-    }
-  },
-  {
-    "id": 18,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
       "resourceTypes": ["xmlhttprequest"],
       "requestMethods": ["post"],
       "domainType": "firstParty",
@@ -197,7 +173,7 @@
     }
   },
   {
-    "id": 19,
+    "id": 17,
     "action": {
       "type": "block"
     },
