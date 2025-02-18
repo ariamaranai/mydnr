@@ -154,30 +154,6 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["options","post"],
-      "domainType": "firstParty",
-      "urlFilter": "logging_client_events|"
-    }
-  },
-  {
-    "id": 16,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["xmlhttprequest"],
-      "requestMethods": ["post"],
-      "domainType": "firstParty",
-      "urlFilter": "impression/ad|"
-    }
-  },
-  {
-    "id": 17,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
       "requestDomains": [
         "ad-optima.com",
         "ad.ad-arrow.com",
