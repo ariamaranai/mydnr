@@ -229,31 +229,6 @@
         "transform": {
           "queryTransform": {
             "removeParams": [
-              "app",
-              "embeds_referring_euri",
-              "feature",
-              "si",
-              "start_radio"
-            ]
-          }
-        }
-      }
-    },
-    "condition": {
-      "resourceTypes": ["main_frame"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "requestDomains": ["youtube.com","youtu.be"]
-    }
-  },
-  {
-    "id": 103,
-    "action": {
-      "type": "redirect",
-      "redirect": {
-        "transform": {
-          "queryTransform": {
-            "removeParams": [
               "hl",
               "ig_rid",
               "locale",
@@ -272,7 +247,7 @@
     }
   },
   {
-    "id": 104,
+    "id": 103,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -302,53 +277,7 @@
     }
   },
   {
-    "id": 105,
-    "action": {
-      "type": "redirect",
-      "redirect": {
-        "transform": {
-          "host": "x.com",
-          "queryTransform": {
-            "removeParams": [
-              "ref_src",
-              "src",
-              "vertical"
-            ]
-          }
-        }
-      }
-    },
-    "condition": {
-      "resourceTypes": ["main_frame"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "requestDomains": ["x.com","twitter.com"]
-    }
-  },
-  {
-    "id": 106,
-    "action": {
-      "type": "redirect",
-      "redirect": {
-        "transform": {
-          "queryTransform": {
-            "removeParams": [
-              "si",
-              "utm_source"
-            ]
-          }
-        }
-      }
-    },
-    "condition": {
-      "resourceTypes": ["main_frame"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "urlFilter": "|https://open.spotify.com"
-    }
-  },
-  {
-    "id": 107,
+    "id": 104,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -369,7 +298,7 @@
     }
   },
   {
-    "id": 108,
+    "id": 105,
     "action": {
       "type": "redirect",
       "redirect": {
