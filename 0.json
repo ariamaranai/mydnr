@@ -2,6 +2,15 @@
   {
     "id": 1,
     "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["ping","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "action": {
       "type":"block"
     },
     "condition": {
@@ -10,7 +19,7 @@
     }
   },
   {
-    "id": 2,
+    "id": 3,
     "action": {
       "type": "block"
     },
@@ -21,7 +30,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 4,
     "action": {
       "type": "block"
     },
@@ -29,11 +38,11 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://www.gstatic.com/*/cast_*.js"
+      "urlFilter": "|https://www.gstatic.com/*/cast_*.js|"
     }
   },
   {
-    "id": 4,
+    "id": 5,
     "action": {
       "type": "block"
     },
@@ -45,7 +54,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 6,
     "action": {
       "type": "block"
     },
@@ -57,7 +66,7 @@
     }
   },
   {
-    "id": 6,
+    "id": 7,
     "action": {
       "type": "block"
     },
@@ -69,7 +78,7 @@
     }
   },
   {
-    "id": 7,
+    "id": 8,
     "action": {
       "type": "block"
     },
@@ -81,7 +90,7 @@
     }
   },
   {
-    "id": 8,
+    "id": 9,
     "action": {
       "type": "block"
     },
@@ -93,7 +102,7 @@
     }
   },
   {
-    "id": 9,
+    "id": 10,
     "action": {
       "type": "block"
     },
@@ -105,18 +114,18 @@
     }
   },
   {
-    "id": 10,
+    "id": 11,
     "action": {
       "type": "block"
     },
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "/(gtm|gtag|ad|counter|matomo|smartphone|tracker).*?\\.js"
+      "regexFilter": "/(gtm|gtag|ad|counter|matomo|smartphone|tracker).*?\\.js$"
     }
   },
   {
-    "id": 11,
+    "id": 12,
     "action": {
       "type": "block"
     },
@@ -128,7 +137,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 13,
     "action": {
       "type": "block"
     },
