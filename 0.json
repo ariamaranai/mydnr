@@ -5,7 +5,7 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["ping","xmlhttprequest"]
+      "resourceTypes": ["ping","csp_report"]
     }
   },
   {
