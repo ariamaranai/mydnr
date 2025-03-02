@@ -121,7 +121,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "/(gtm|gtag|ad|counter|matomo|smartphone|tracker).*?\\.js$"
+      "regexFilter": "/(gtm|gtag|ad|matomo|tracker).*?\\.js$"
     }
   },
   {
@@ -138,6 +138,18 @@
   },
   {
     "id": 13,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "urlFilter": "ads-twitter.com/uwt.js|"
+    }
+  },
+  {
+    "id": 14,
     "action": {
       "type": "block"
     },
