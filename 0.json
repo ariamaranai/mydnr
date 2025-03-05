@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "priority": 10009999,
     "action": {
       "type": "block"
     },
@@ -10,6 +11,7 @@
   },
   {
     "id": 2,
+    "priority": 10009998,
     "action": {
       "type":"block"
     },
@@ -20,6 +22,7 @@
   },
   {
     "id": 3,
+    "priority": 10009997,
     "action": {
       "type": "block"
     },
@@ -31,6 +34,7 @@
   },
   {
     "id": 4,
+    "priority": 10009996,
     "action": {
       "type": "block"
     },
@@ -43,6 +47,7 @@
   },
   {
     "id": 5,
+    "priority": 10009995,
     "action": {
       "type": "block"
     },
@@ -55,6 +60,7 @@
   },
   {
     "id": 6,
+    "priority": 10009994,
     "action": {
       "type": "block"
     },
@@ -67,6 +73,7 @@
   },
   {
     "id": 7,
+    "priority": 10009993,
     "action": {
       "type": "block"
     },
@@ -79,6 +86,7 @@
   },
   {
     "id": 8,
+    "priority": 10009992,
     "action": {
       "type": "block"
     },
@@ -91,6 +99,7 @@
   },
   {
     "id": 9,
+    "priority": 10009991,
     "action": {
       "type": "block"
     },
@@ -103,6 +112,7 @@
   },
   {
     "id": 10,
+    "priority": 10009990,
     "action": {
       "type": "block"
     },
@@ -115,6 +125,7 @@
   },
   {
     "id": 11,
+    "priority": 10009989,
     "action": {
       "type": "block"
     },
@@ -126,6 +137,7 @@
   },
   {
     "id": 12,
+    "priority": 10009988,
     "action": {
       "type": "block"
     },
@@ -138,6 +150,7 @@
   },
   {
     "id": 13,
+    "priority": 10009987,
     "action": {
       "type": "block"
     },
@@ -150,6 +163,7 @@
   },
   {
     "id": 14,
+    "priority": 10009986,
     "action": {
       "type": "block"
     },
@@ -228,6 +242,7 @@
   },
   {
     "id": 101,
+    "priority": 10008999,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -240,11 +255,12 @@
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://www.google.co.jp"
+      "urlFilter": "|https://www.google.co."
     }
   },
   {
     "id": 102,
+    "priority": 10008998,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -270,6 +286,7 @@
   },
   {
     "id": 103,
+    "priority": 10008997,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -300,6 +317,7 @@
   },
   {
     "id": 104,
+    "priority": 10008996,
     "action": {
       "type": "redirect",
       "redirect": {
@@ -321,6 +339,7 @@
   },
   {
     "id": 105,
+    "priority": 10008995,
     "action": {
       "type": "redirect",
       "redirect": {
