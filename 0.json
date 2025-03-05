@@ -42,7 +42,7 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://www.gstatic.com/*/cast_*.js|"
+      "urlFilter": "|https://www.gstatic.com/*/cast_*.js"
     }
   },
   {
