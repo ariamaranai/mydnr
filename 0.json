@@ -132,7 +132,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "/(gtm|gtag|ad|matomo|tracker).*?\\.js$"
+      "regexFilter": "/(gtm|gtag|matomo).*?\\.js$"
     }
   },
   {
@@ -311,7 +311,7 @@
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://www.tiktok.com"
+      "urlFilter": "|https://www.tiktok."
     }
   },
   {
