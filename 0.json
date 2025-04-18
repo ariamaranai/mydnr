@@ -241,24 +241,6 @@
   },
   {
     "id": 101,
-    "priority": 10008999,
-    "action": {
-      "type": "redirect",
-      "redirect": {
-        "transform": {
-          "host": "www.google.com"
-        }
-      }
-    },
-    "condition": {
-      "resourceTypes": ["main_frame"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "urlFilter": "|https://www.google.co."
-    }
-  },
-  {
-    "id": 102,
     "priority": 10008998,
     "action": {
       "type": "redirect",
@@ -284,7 +266,7 @@
     }
   },
   {
-    "id": 103,
+    "id": 102,
     "priority": 10008997,
     "action": {
       "type": "redirect",
@@ -315,7 +297,7 @@
     }
   },
   {
-    "id": 104,
+    "id": 103,
     "priority": 10008996,
     "action": {
       "type": "redirect",
@@ -337,7 +319,7 @@
     }
   },
   {
-    "id": 105,
+    "id": 104,
     "priority": 10008995,
     "action": {
       "type": "redirect",
