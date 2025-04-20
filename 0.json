@@ -80,7 +80,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "/(gtm|gtag|matomo|ad).*?\\.js$"
+      "regexFilter": "/(gtm\\.js|(gtag|matomo|ad)*?\\.js)$"
     }
   },
   {
