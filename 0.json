@@ -168,6 +168,9 @@
       "type": "block"
     },
     "condition": {
+      "resourceTypes": ["sub_frame","script"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
       "requestDomains": [
         "ad-optima.com",
         "ad.ad-arrow.com",
@@ -225,6 +228,7 @@
         "sync.getpublica.com",
         "sync.richaudience.com",
         "sync.targeting.unrulymedia.com",
+        "undoneferocious.com",
         "ups.analytics.yahoo.com",
         "usersync.getpublica.com",
         "wcp.taobao.com",
