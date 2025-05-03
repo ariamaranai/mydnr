@@ -324,7 +324,7 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "domainType": "thirdParty",
+      "domainType": "firstParty",
       "urlFilter": "|https://sakurazaka46."
     }
   }
