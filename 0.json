@@ -150,19 +150,6 @@
   },
   {
     "id": 14,
-    "priority": 10009987,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "urlFilter": "ads-twitter.com/uwt.js|"
-    }
-  },
-  {
-    "id": 15,
     "priority": 10009986,
     "action": {
       "type": "block"
@@ -176,6 +163,7 @@
         "ad.ad-arrow.com",
         "adcdn.goo.ne.jp",
         "admin.blog.fc2.com",
+        "ads-twitter.com",
         "ads.stickyadstv.com",
         "adtrust.appspot.com",
         "api.narrativ.ai",
