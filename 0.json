@@ -150,6 +150,19 @@
   },
   {
     "id": 14,
+    "priority": 10009987,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "domainType": "firstParty",
+      "urlFilter": "twitter-base-pixel.js|"
+    }
+  },
+  {
+    "id": 15,
     "priority": 10009986,
     "action": {
       "type": "block"
