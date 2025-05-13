@@ -17,7 +17,7 @@
     },
     "condition": {
       "requestMethods": ["get"],
-      "regexFilter": "^https://[^.]*?\\.google\\.com/(?:gen[^_]*?204|client_204|pagead/|maps/preview/log204)"
+      "regexFilter": "^https://[^.]*?\\.google\\.com/(?:gen[^_]*?_204|client_204|pagead/|maps/preview/log204)"
     }
   },
   {
@@ -80,7 +80,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "/(gtm\\.js|(?:gtag|matomo|ad)*?\\.js)$"
+      "regexFilter": "^https://[^/]+/.*?(?:gtm|gtag|matomo|ad[.-]|analysis)"
     }
   },
   {
