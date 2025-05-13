@@ -17,7 +17,7 @@
     },
     "condition": {
       "requestMethods": ["get"],
-      "regexFilter": "^https://[^.]*?\\.google\\.com/(gen[^_]*?204|client_204|pagead/|maps/preview/log204)"
+      "regexFilter": "^https://[^.]*?\\.google\\.com/(?:gen[^_]*?204|client_204|pagead/|maps/preview/log204)"
     }
   },
   {
@@ -68,7 +68,7 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "regexFilter": "^https://(maps|translate)\\.goo"
+      "regexFilter": "^https://(?:maps|translate)\\.goo"
     }
   },
   {
@@ -80,7 +80,7 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "/(gtm\\.js|(gtag|matomo|ad)*?\\.js)$"
+      "regexFilter": "/(gtm\\.js|(?:gtag|matomo|ad)*?\\.js)$"
     }
   },
   {
@@ -93,7 +93,7 @@
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/img.*?(ja/image/top|premium|bnr|_nk_|gif\\?2020|keirin|top_img)"
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img.*?(?:ja/image/top|premium|bnr|_nk_|gif\\?2020|keirin|top_img)"
     }
   },
   {
@@ -119,25 +119,12 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/img.*?(loadFif|monthly_goods_link|user\\.action)"
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img(?:\\.?).*?/(?:loadFif|monthly_goods_link|user\\.action|get_ad_request|jquery\\.touchSwipe\\.min|nk_last_login|table_hover)"
     }
   },
   {
     "id": 12,
     "priority": 10009989,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/img\\..*?/(get_ad_request|jquery\\.touchSwipe\\.min|nk_last_login|table_hover)"
-    }
-  },
-  {
-    "id": 13,
-    "priority": 10009988,
     "action": {
       "type": "block"
     },
@@ -150,7 +137,7 @@
   },
   {
     "id": 14,
-    "priority": 10009987,
+    "priority": 10009988,
     "action": {
       "type": "block"
     },
@@ -163,7 +150,7 @@
   },
   {
     "id": 15,
-    "priority": 10009986,
+    "priority": 10009987,
     "action": {
       "type": "block"
     },
