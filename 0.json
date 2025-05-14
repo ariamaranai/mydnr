@@ -17,7 +17,7 @@
     },
     "condition": {
       "requestMethods": ["get"],
-      "regexFilter": "^https://.+?\\.google\\.com/(?:gen.*?_204|client_204|pagead/|maps/preview/log204)"
+      "regexFilter": "^https://.+?\\.google\\.com/(?:gen.*?_204|client_204|pagead/|maps/(preview|embed)|/log204)"
     }
   },
   {
@@ -46,20 +46,7 @@
     }
   },
   {
-    "id": 6,
-    "priority": 10009995,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["sub_frame"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "urlFilter": "|https://www.google.com/maps/embed/"
-    }
-  },
-  {
-    "id": 7,
+    "id": 5,
     "priority": 10009994,
     "action": {
       "type": "block"
@@ -68,11 +55,11 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "regexFilter": "^https://(?:maps|translate)\\.goo"
+      "urlFilter": "|https://maps.goo"
     }
   },
   {
-    "id": 8,
+    "id": 6,
     "priority": 10009993,
     "action": {
       "type": "block"
@@ -80,11 +67,24 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "^https://.+?/.*?(?:gtm|gtag|matomo|ad[\\.-]|analysis)"
+      "domainType": "thirdParty",
+      "urlFilter": "|https://translate.goo"
     }
   },
   {
-    "id": 9,
+    "id": 7,
+    "priority": 10009993,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "regexFilter": "^https://.+?/.*?(?:gtm|gtag|matomo)"
+    }
+  },
+  {
+    "id": 8,
     "priority": 10009992,
     "action": {
       "type": "block"
@@ -97,7 +97,7 @@
     }
   },
   {
-    "id": 10,
+    "id": 9,
     "priority": 10009991,
     "action": {
       "type": "block"
@@ -110,7 +110,7 @@
     }
   },
   {
-    "id": 11,
+    "id": 10,
     "priority": 10009990,
     "action": {
       "type": "block"
@@ -123,7 +123,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 11,
     "priority": 10009989,
     "action": {
       "type": "block"
@@ -136,7 +136,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 12,
     "priority": 10009988,
     "action": {
       "type": "block"
@@ -149,7 +149,7 @@
     }
   },
   {
-    "id": 15,
+    "id": 13,
     "priority": 10009987,
     "action": {
       "type": "block"
