@@ -144,13 +144,24 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "urlFilter": "twitter-base-pixel.js|"
+      "urlFilter": "tw-widget.js|"
     }
   },
   {
     "id": 13,
     "priority": 10009987,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "urlFilter": "twitter-base-pixel.js|"
+    }
+  },
+  {
+    "id": 14,
+    "priority": 10009986,
     "action": {
       "type": "block"
     },
