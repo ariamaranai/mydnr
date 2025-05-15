@@ -16,25 +16,18 @@
       "type":"block"
     },
     "condition": {
-      "requestMethods": ["get"],
-      "regexFilter": "^https://.+?\\.google\\.com/(?:gen.*?_204|client_204|pagead/|maps/(preview|embed)|/log204)"
-    }
-  },
-  {
-    "id": 3,
-    "priority": 10009997,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["other","xmlhttprequest"],
-      "requestMethods": ["get","head"],
-      "urlFilter": ".com/generate_204|"
+      "resourceTypes": ["sub_frame","image","xmlhttprequest","other"],
+      "requestMethods": ["get", "head"],
+      "initiatorDomains": [
+        "google.com",
+        "i.ytimg.com"
+      ],
+      "urlFilter": "204"
     }
   },
   {
     "id": 4,
-    "priority": 10009996,
+    "priority": 10009997,
     "action": {
       "type": "block"
     },
@@ -47,7 +40,7 @@
   },
   {
     "id": 5,
-    "priority": 10009994,
+    "priority": 10009996,
     "action": {
       "type": "block"
     },
@@ -60,7 +53,7 @@
   },
   {
     "id": 6,
-    "priority": 10009993,
+    "priority": 10009995,
     "action": {
       "type": "block"
     },
@@ -73,7 +66,7 @@
   },
   {
     "id": 7,
-    "priority": 10009993,
+    "priority": 10009994,
     "action": {
       "type": "block"
     },
@@ -85,7 +78,7 @@
   },
   {
     "id": 8,
-    "priority": 10009992,
+    "priority": 10009993,
     "action": {
       "type": "block"
     },
@@ -98,7 +91,7 @@
   },
   {
     "id": 9,
-    "priority": 10009991,
+    "priority": 10009992,
     "action": {
       "type": "block"
     },
@@ -111,7 +104,7 @@
   },
   {
     "id": 10,
-    "priority": 10009990,
+    "priority": 10009991,
     "action": {
       "type": "block"
     },
@@ -119,12 +112,12 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/img(?:\\.?).*?/(?:loadFif|monthly_goods_link|user\\.action|get_ad_request|jquery\\.touchSwipe\\.min|nk_last_login|table_hover)"
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img(?:\\.?).*?/(?:loadFif|monthly_goods_link|user\\.action|get_ad_request|jquery\\.touchSwipe|nk_last_login|table_hover)"
     }
   },
   {
     "id": 11,
-    "priority": 10009989,
+    "priority": 10009990,
     "action": {
       "type": "block"
     },
@@ -137,7 +130,7 @@
   },
   {
     "id": 12,
-    "priority": 10009988,
+    "priority": 10009989,
     "action": {
       "type": "block"
     },
@@ -149,7 +142,7 @@
   },
   {
     "id": 13,
-    "priority": 10009987,
+    "priority": 10009988,
     "action": {
       "type": "block"
     },
@@ -161,7 +154,7 @@
   },
   {
     "id": 14,
-    "priority": 10009986,
+    "priority": 10009987,
     "action": {
       "type": "block"
     },
@@ -178,7 +171,6 @@
         "ads.stickyadstv.com",
         "adtrust.appspot.com",
         "analytics.tiktok.com",
-        "api.narrativ.ai",
         "assets.getpocket.com",
         "at.cbsi.com",
         "bid.ssp.bance.jp",
@@ -198,15 +190,16 @@
         "countrycheck.livedoor.com",
         "d.line-scdn.net",
         "delivery.adrecover.com",
+        "doubleclick.net",
         "dsb.yahoo.co.jp",
         "eb2.3lift.com",
         "flsrv.net",
-        "googleads.g.doubleclick.net",
         "ib.adnxs.com",
-        "image6.pubmatic.com",
-        "image8.pubmatic.com",
+        "pubmatic.com",
+        "pubmatic.com",
         "j.wovn.io",
         "jp.rakuten-static.com",
+        "js.stripe.com",
         "lk.ameba.jp",
         "log000.goo.ne.jp",
         "netdreamersad.durasite.net",
@@ -218,12 +211,10 @@
         "qoe.lemino.docomo.ne.jp",
         "ratel-ad.com",
         "referrer.disqus.com",
-        "securepubads.g.doubleclick.net",
         "servedbyadbutler.com",
         "ssl.google-analytics.com",
         "s-ad.rmp.rakuten.co.jp",
         "static.addtoany.com",
-        "static.doubleclick.net",
         "sync.1rx.io",
         "sync.getpublica.com",
         "sync.richaudience.com",
@@ -239,6 +230,7 @@
         "www.googletagservices.com",
         "www.line-website.com",
         "x.bidswitch.net",
+        "xola.com",
         "yads.c.yimg.jp"
       ]
     }
