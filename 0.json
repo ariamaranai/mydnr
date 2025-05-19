@@ -22,7 +22,8 @@
         "google.com",
         "i.ytimg.com"
       ],
-      "urlFilter": "204"
+      "urlFilter": "204",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -35,7 +36,8 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://www.gstatic.com/*/cast_*.js"
+      "urlFilter": "|https://www.gstatic.com/*/cast_*.js",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -48,7 +50,8 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://maps.goo"
+      "urlFilter": "|https://maps.goo",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -61,7 +64,8 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://translate.goo"
+      "urlFilter": "|https://translate.goo",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -73,7 +77,8 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "regexFilter": "^https://.+?/.*?(?:gtm|gtag|matomo)"
+      "regexFilter": "^https://.+?/.*?(?:gtm|gtag|matomo)",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -86,7 +91,8 @@
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/img.*?(?:ja/image/top|premium|bnr|_nk_|gif\\?2020|keirin|top_img)"
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img.*?(?:ja/image/top|premium|bnr|_nk_|gif\\?2020|keirin|top_img)",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -99,7 +105,8 @@
       "resourceTypes": ["script","stylesheet","xmlhttprequest"],
       "requestMethods": ["get","post"],
       "domainType": "firstParty",
-      "urlFilter": "||netkeiba.com/*ajax"
+      "urlFilter": "||netkeiba.com/*ajax",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -112,7 +119,8 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/img(?:\\.?).*?/(?:loadFif|monthly_goods_link|user\\.action|get_ad_request|jquery\\.touchSwipe|nk_last_login|table_hover)"
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img(?:\\.?).*?/(?:loadFif|monthly_goods_link|user\\.action|get_ad_request|jquery\\.touchSwipe|nk_last_login|table_hover)",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -125,7 +133,8 @@
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://b.st-hatena.com/images/users/gif/normal/"
+      "urlFilter": "|https://b.st-hatena.com/images/users/gif/normal/",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -137,7 +146,8 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "tw-widget.js|"
+      "urlFilter": "tw-widget.js|",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -149,7 +159,8 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "twitter-base-pixel.js|"
+      "urlFilter": "twitter-base-pixel.js|",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -286,7 +297,8 @@
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://www.tiktok."
+      "urlFilter": "|https://www.tiktok.",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -308,7 +320,8 @@
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://note.com"
+      "urlFilter": "|https://note.com",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -325,7 +338,8 @@
     "condition": {
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
-      "urlFilter": "|https://sakurazaka46."
+      "urlFilter": "|https://sakurazaka46.",
+      "isUrlFilterCaseSensitive": true
     }
   }
 ]
