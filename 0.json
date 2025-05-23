@@ -16,14 +16,12 @@
       "type":"block"
     },
     "condition": {
-      "resourceTypes": ["sub_frame","image","xmlhttprequest","other"],
-      "requestMethods": ["get", "head"],
+      "resourceTypes": ["sub_frame","image","xmlhttprequest"],
+      "requestMethods": ["get","head"],
       "initiatorDomains": [
-        "google.com",
-        "i.ytimg.com"
+        "google.com"
       ],
-      "urlFilter": "204",
-      "isUrlFilterCaseSensitive": true
+      "urlFilter": "204|"
     }
   },
   {
