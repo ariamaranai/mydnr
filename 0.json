@@ -18,10 +18,7 @@
     "condition": {
       "resourceTypes": ["sub_frame","image","xmlhttprequest"],
       "requestMethods": ["get","head"],
-      "initiatorDomains": [
-        "google.com"
-      ],
-      "urlFilter": "204|"
+      "urlFilter": "||google.com*204|"
     }
   },
   {
