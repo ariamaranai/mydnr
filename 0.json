@@ -114,7 +114,7 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/img(?:\\.?).*?/(?:loadFif|monthly_|user\\.act|touchS|get_ad_req|nk_last_logi|table_ho)",
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img(?:\\.?).*?/(?:loadFif|monthly_|user\\.act|common/js/jquery\\.touchS|get_ad_req|nk_last_logi|table_ho)",
       "isUrlFilterCaseSensitive": true
     }
   },
