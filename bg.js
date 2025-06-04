@@ -8,9 +8,9 @@ chrome.action.onClicked.addListener(async () => {
   });
 });
 {
-  let hasStarted;
+  let isCalled;
   chrome.runtime.onStartup.addListener(async () =>
-    hasStarted ??= chrome.action.setIcon({
+    isCalled ??= chrome.action.setIcon({
       path: (await chrome.declarativeNetRequest.getEnabledRulesets()).length ? "on.png" : "off.png"
     })
   );

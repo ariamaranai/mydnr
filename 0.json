@@ -22,7 +22,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 3,
     "priority": 10009997,
     "action": {
       "type": "block"
@@ -36,36 +36,8 @@
     }
   },
   {
-    "id": 5,
+    "id": 4,
     "priority": 10009996,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "urlFilter": "|https://maps.goo",
-      "isUrlFilterCaseSensitive": true
-    }
-  },
-  {
-    "id": 6,
-    "priority": 10009995,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "domainType": "thirdParty",
-      "urlFilter": "|https://translate.goo",
-      "isUrlFilterCaseSensitive": true
-    }
-  },
-  {
-    "id": 7,
-    "priority": 10009994,
     "action": {
       "type": "block"
     },
@@ -77,8 +49,8 @@
     }
   },
   {
-    "id": 8,
-    "priority": 10009993,
+    "id": 5,
+    "priority": 10009995,
     "action": {
       "type": "block"
     },
@@ -91,8 +63,8 @@
     }
   },
   {
-    "id": 9,
-    "priority": 10009992,
+    "id": 6,
+    "priority": 10009994,
     "action": {
       "type": "block"
     },
@@ -105,8 +77,8 @@
     }
   },
   {
-    "id": 10,
-    "priority": 10009991,
+    "id": 7,
+    "priority": 10009993,
     "action": {
       "type": "block"
     },
@@ -119,8 +91,8 @@
     }
   },
   {
-    "id": 11,
-    "priority": 10009990,
+    "id": 8,
+    "priority": 10009992,
     "action": {
       "type": "block"
     },
@@ -132,8 +104,8 @@
     }
   },
   {
-    "id": 12,
-    "priority": 10009989,
+    "id": 9,
+    "priority": 10009991,
     "action": {
       "type": "block"
     },
@@ -145,8 +117,8 @@
     }
   },
   {
-    "id": 13,
-    "priority": 10009988,
+    "id": 10,
+    "priority": 10009990,
     "action": {
       "type": "block"
     },
@@ -158,8 +130,8 @@
     }
   },
   {
-    "id": 14,
-    "priority": 10009987,
+    "id": 11,
+    "priority": 10009989,
     "action": {
       "type": "block"
     },
@@ -197,6 +169,7 @@
         "eb2.3lift.com",
         "flsrv.net",
         "getpublica.com",
+        "google.com",
         "google-analytics.com",
         "googleoptimize.com",
         "googlesyndication.com",
@@ -254,7 +227,10 @@
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "requestDomains": ["facebook.com","instagram.com"]
+      "requestDomains": [
+        "facebook.com",
+        "instagram.com"
+      ]
     }
   },
   {
