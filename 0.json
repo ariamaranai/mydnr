@@ -138,7 +138,7 @@
       "type": "allow"
     },
     "condition": {
-      "resourceTypes": ["script"],
+      "resourceTypes": ["sub_frame","script"],
       "requestMethods": ["get"],
       "urlFilter": "|https://www.google.com/recaptcha",
       "isUrlFilterCaseSensitive": true
@@ -191,7 +191,6 @@
         "ranklet4.com",
         "ratel-ad.com",
         "richaudience.com",
-        "s-ad.rmp.rakuten.co.jp",
         "servedbyadbutler.com",
         "stickyadstv.com",
         "stripe.com",
