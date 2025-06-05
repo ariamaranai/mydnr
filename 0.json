@@ -56,6 +56,19 @@
       "type": "block"
     },
     "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "urlFilter": "tw-widget.js|",
+      "isUrlFilterCaseSensitive": true
+    }
+  },
+  {
+    "id": 6,
+    "priority": 10009994,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
       "domainType": "firstParty",
@@ -64,8 +77,8 @@
     }
   },
   {
-    "id": 6,
-    "priority": 10009994,
+    "id": 7,
+    "priority": 10009993,
     "action": {
       "type": "block"
     },
@@ -78,20 +91,6 @@
     }
   },
   {
-    "id": 7,
-    "priority": 10009993,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "domainType": "firstParty",
-      "regexFilter": "^https://cdn\\.netkeiba\\.com/img(?:\\.?).*?/(?:loadFif|monthly_|user\\.act|common/js/jquery\\.touchS|get_ad_req|nk_last_logi|table_ho)",
-      "isUrlFilterCaseSensitive": true
-    }
-  },
-  {
     "id": 8,
     "priority": 10009992,
     "action": {
@@ -100,7 +99,8 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "urlFilter": "tw-widget.js|",
+      "domainType": "firstParty",
+      "regexFilter": "^https://cdn\\.netkeiba\\.com/img(?:\\.?).*?/(?:loadFif|monthly_|user\\.act|common/js/jquery\\.touchS|get_ad_req|nk_last_logi|table_ho)",
       "isUrlFilterCaseSensitive": true
     }
   },
@@ -140,7 +140,6 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
-      "domainType": "thirdParty",
       "urlFilter": "|https://www.google.com/recaptcha",
       "isUrlFilterCaseSensitive": true
     }
@@ -166,7 +165,6 @@
         "adtrust.appspot.com",
         "amazon-adsystem.com",
         "analytics.tiktok.com",
-        "assets.getpocket.com",
         "bance.jp",
         "bidswitch.net",
         "codoc.jp",
