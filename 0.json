@@ -18,7 +18,8 @@
     "condition": {
       "resourceTypes": ["sub_frame","image","xmlhttprequest"],
       "requestMethods": ["get","head"],
-      "urlFilter": "||google.com*204|"
+      "urlFilter": "||google.com*204|",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -126,12 +127,27 @@
       "resourceTypes": ["script","image"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://b.st-hatena"
+      "urlFilter": "|https://b.st-hatena",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
     "id": 11,
     "priority": 10009989,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "urlFilter": "|https://www.google.com/recaptcha",
+      "isUrlFilterCaseSensitive": true
+    }
+  },
+  {
+    "id": 12,
+    "priority": 10009988,
     "action": {
       "type": "block"
     },
@@ -140,13 +156,13 @@
       "requestMethods": ["get"],
       "domainType": "thirdParty",
       "requestDomains": [
+        "1rx.io",
         "ad-optima.com",
         "ad.ad-arrow.com",
         "addtoany.com",
         "adnxs.com",
         "adrecover.com",
         "ads-twitter.com",
-        "ads.stickyadstv.com",
         "adtrust.appspot.com",
         "amazon-adsystem.com",
         "analytics.tiktok.com",
@@ -154,7 +170,6 @@
         "at.cbsi.com",
         "bance.jp",
         "bidswitch.net",
-        "cdn.pool.st-hatena.com",
         "codoc.jp",
         "cookielaw.org",
         "disqus.com",
@@ -173,6 +188,7 @@
         "line-website.com",
         "lk.ameba.jp",
         "onetrust.com",
+        "pool.st-hatena.com",
         "pubmatic.com",
         "rakuten-static.com",
         "ranklet4.com",
@@ -180,8 +196,8 @@
         "richaudience.com",
         "s-ad.rmp.rakuten.co.jp",
         "servedbyadbutler.com",
+        "stickyadstv.com",
         "stripe.com",
-        "sync.1rx.io",
         "taobao.com",
         "undoneferocious.com",
         "unrulymedia.com",
