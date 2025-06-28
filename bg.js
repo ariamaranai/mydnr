@@ -7,15 +7,17 @@ chrome.action.onClicked.addListener(async () => {
     [len ? "disableRulesetIds" : "enableRulesetIds"] : ["0"]
   });
 });
-chrome.declarativeNetRequest.onRuleMatchedDebug.addListener(info =>
-  chrome.declarativeNetRequest.setExtensionActionOptions({
-    displayActionCountAsBadgeText: !0,
-    tabUpdate: {
-      increment: 1,
-      tabId: info.request.tabId
-    }
-  })
-);
+chrome.declarativeNetRequest.onRuleMatchedDebug.addListener(async info => {
+  try {
+    await chrome.declarativeNetRequest.setExtensionActionOptions({
+      displayActionCountAsBadgeText: !0,
+      tabUpdate: {
+        increment: 1,
+        tabId: info.request.tabId
+      }
+    })
+  } catch {}
+});
 {
   let isCalled;
   chrome.runtime.onStartup.addListener(async () =>
