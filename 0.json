@@ -138,6 +138,34 @@
       "type": "block"
     },
     "condition": {
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "urlFilter": "|https://endlessenterprisebrawl.",
+      "isUrlFilterCaseSensitive": true
+    }
+  },
+  {
+    "id": 12,
+    "priority": 10009988,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "urlFilter": "|https://jsmcrptjmp.",
+      "isUrlFilterCaseSensitive": true
+    }
+  },
+  {
+    "id": 13,
+    "priority": 10009987,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
       "resourceTypes": ["sub_frame","script"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
