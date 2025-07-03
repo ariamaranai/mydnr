@@ -141,7 +141,7 @@
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://endlessenterprisebrawl.",
+      "urlFilter": "||stripchat.com",
       "isUrlFilterCaseSensitive": true
     }
   },
@@ -155,13 +155,27 @@
       "resourceTypes": ["main_frame"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "urlFilter": "|https://jsmcrptjmp.",
+      "urlFilter": "|https://endlessenterprisebrawl.",
       "isUrlFilterCaseSensitive": true
     }
   },
   {
     "id": 13,
     "priority": 10009987,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["main_frame"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "urlFilter": "|https://jsmcrptjmp.",
+      "isUrlFilterCaseSensitive": true
+    }
+  },
+  {
+    "id": 14,
+    "priority": 10009986,
     "action": {
       "type": "block"
     },
