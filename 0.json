@@ -78,20 +78,6 @@
   },
   {
     "id": 7,
-    "priority": 10009993,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script","stylesheet","xmlhttprequest"],
-      "requestMethods": ["get","post"],
-      "domainType": "firstParty",
-      "urlFilter": "||netkeiba.com/*ajax",
-      "isUrlFilterCaseSensitive": true
-    }
-  },
-  {
-    "id": 8,
     "priority": 10009992,
     "action": {
       "type": "block"
@@ -105,7 +91,7 @@
     }
   },
   {
-    "id": 9,
+    "id": 8,
     "priority": 10009991,
     "action": {
       "type": "block"
@@ -118,7 +104,7 @@
     }
   },
   {
-    "id": 10,
+    "id": 9,
     "priority": 10009990,
     "action": {
       "type": "block"
@@ -132,7 +118,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 10,
     "priority": 10009986,
     "action": {
       "type": "block"
