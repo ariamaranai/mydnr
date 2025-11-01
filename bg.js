@@ -1,11 +1,9 @@
 chrome.action.onClicked.addListener(async () => {
-  let len = (await chrome.declarativeNetRequest.getEnabledRulesets()).length;
-  chrome.action.setIcon({
-    path: len ? "off.png": "on.png"
-  });
+  let path = "on.png";
   chrome.declarativeNetRequest.updateEnabledRulesets({
-    [len ? "disableRulesetIds" : "enableRulesetIds"] : ["0"]
+    [(await chrome.declarativeNetRequest.getEnabledRulesets()).length ? (path = "off.png", "disableRulesetIds") : "enableRulesetIds"]: ["0"]
   });
+  chrome.action.setIcon({ path });
 });
 chrome.declarativeNetRequest.onRuleMatchedDebug.addListener(async info => {
   try {
