@@ -46,6 +46,9 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "regexFilter": "^https://.+?/.*?(?:gtm|gtag|matomo)",
+      "excludedRequestDomains": [
+        "chatgpt.com"
+      ],
       "isUrlFilterCaseSensitive": true
     }
   },
