@@ -7,7 +7,7 @@ chrome.action.onClicked.addListener(async () => {
 });
 chrome.declarativeNetRequest.onRuleMatchedDebug.addListener(async info => {
   try {
-    await chrome.declarativeNetRequest.setExtensionActionOptions({
+    return await chrome.declarativeNetRequest.setExtensionActionOptions({
       displayActionCountAsBadgeText: !0,
       tabUpdate: {
         increment: 1,
